@@ -1,0 +1,118 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: FrontMatter/Acknowledgements.aux
+A level-1 auxiliary file: FrontMatter/Abstract.aux
+A level-1 auxiliary file: FrontMatter/BilingualAbstract.aux
+A level-1 auxiliary file: Content/Chapter1.aux
+A level-1 auxiliary file: Content/Chapter2.aux
+A level-1 auxiliary file: Content/Chapter3.aux
+A level-1 auxiliary file: Content/Chapter4.aux
+The style file: plain.bst
+Database file #1: Content/Bibliography.bib
+Repeated entry---line 199 of file Content/Bibliography.bib
+ : @article{garey-johnson-stockmeyer-simplified-np
+ :                                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 210 of file Content/Bibliography.bib
+ : @article{garey-johnson-stockmeyer-simplified-np
+ :                                                ,
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "Broersma, H., Kloks, T., Kratsch, D. and Müller, H." for entry at-free-independent-sets
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Broersma, H., Kloks, T., Kratsch, D. and Müller, H." for entry at-free-independent-sets
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Broersma, H., Kloks, T., Kratsch, D. and Müller, H." for entry at-free-independent-sets
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Mertzios, G.B., Sau, I. and Zaks, S." for entry tolerance-graphs-recognition
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Rhee, C., Liang, Y.D., Dhall, S.K. and Lakshmivarahan, S." for entry rhee-liang-dhall-lakshmivarahan-permutation-graph-algorithm
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Rhee, C., Liang, Y.D., Dhall, S.K. and Lakshmivarahan, S." for entry rhee-liang-dhall-lakshmivarahan-permutation-graph-algorithm
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Rhee, C., Liang, Y.D., Dhall, S.K. and Lakshmivarahan, S." for entry rhee-liang-dhall-lakshmivarahan-permutation-graph-algorithm
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Garey, M.R., Johnson, D.S." for entry garey-johnson-np-completeness
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Garey, M.R., Johnson, D., Stockmeyer, L." for entry garey-johnson-stockmeyer-simplified-np
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Garey, M.R., Johnson, D., Stockmeyer, L." for entry garey-johnson-stockmeyer-simplified-np
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Garey, M.R., Johnson, D., Stockmeyer, L." for entry garey-johnson-stockmeyer-simplified-np
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Grötschel, M., Lovász, L., Schrijver, A." for entry grotschel-lovasz-schrijver-ellipsoid-method
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Grötschel, M., Lovász, L., Schrijver, A." for entry grotschel-lovasz-schrijver-ellipsoid-method
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Grötschel, M., Lovász, L., Schrijver, A." for entry grotschel-lovasz-schrijver-ellipsoid-method
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Broersma, H., Kloks, T., Kratsch, D. and Müller, H." for entry at-free-independent-sets
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Broersma, H., Kloks, T., Kratsch, D. and Müller, H." for entry at-free-independent-sets
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Broersma, H., Kloks, T., Kratsch, D. and Müller, H." for entry at-free-independent-sets
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Garey, M.R., Johnson, D., Stockmeyer, L." for entry garey-johnson-stockmeyer-simplified-np
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Garey, M.R., Johnson, D., Stockmeyer, L." for entry garey-johnson-stockmeyer-simplified-np
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Garey, M.R., Johnson, D., Stockmeyer, L." for entry garey-johnson-stockmeyer-simplified-np
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Garey, M.R., Johnson, D.S." for entry garey-johnson-np-completeness
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Grötschel, M., Lovász, L., Schrijver, A." for entry grotschel-lovasz-schrijver-ellipsoid-method
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Grötschel, M., Lovász, L., Schrijver, A." for entry grotschel-lovasz-schrijver-ellipsoid-method
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Grötschel, M., Lovász, L., Schrijver, A." for entry grotschel-lovasz-schrijver-ellipsoid-method
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Mertzios, G.B., Sau, I. and Zaks, S." for entry tolerance-graphs-recognition
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Rhee, C., Liang, Y.D., Dhall, S.K. and Lakshmivarahan, S." for entry rhee-liang-dhall-lakshmivarahan-permutation-graph-algorithm
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Rhee, C., Liang, Y.D., Dhall, S.K. and Lakshmivarahan, S." for entry rhee-liang-dhall-lakshmivarahan-permutation-graph-algorithm
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Rhee, C., Liang, Y.D., Dhall, S.K. and Lakshmivarahan, S." for entry rhee-liang-dhall-lakshmivarahan-permutation-graph-algorithm
+while executing---line 1090 of file plain.bst
+You've used 25 entries,
+            2118 wiz_defined-function locations,
+            653 strings with 7715 characters,
+and the built_in function-call counts, 7266 in all, are:
+= -- 736
+> -- 240
+< -- 0
++ -- 103
+- -- 72
+* -- 490
+:= -- 1246
+add.period$ -- 75
+call.type$ -- 25
+change.case$ -- 110
+chr.to.int$ -- 0
+cite$ -- 25
+duplicate$ -- 272
+empty$ -- 629
+format.name$ -- 72
+if$ -- 1519
+int.to.chr$ -- 0
+int.to.str$ -- 25
+missing$ -- 26
+newline$ -- 128
+num.names$ -- 50
+pop$ -- 69
+preamble$ -- 1
+purify$ -- 86
+quote$ -- 0
+skip$ -- 179
+stack$ -- 0
+substring$ -- 588
+swap$ -- 24
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 96
+warning$ -- 0
+while$ -- 76
+width$ -- 27
+write$ -- 277
+(There were 30 error messages)

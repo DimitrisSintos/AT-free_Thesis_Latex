@@ -1,0 +1,96 @@
+\chapter{Εισαγωγή}
+\label{ch:Introduction}
+
+Η αστεροειδή τριάδα (asteroidal triple) εισήχθη το 1962 για να χαρακτηρίσουν τα interval γραφήματα ως εκείνα τα χορδωτά γραφήματα που δεν περιέχουν μια αστεροειδή τριάδα\cite{ref-20-independent-sets}. Αποτελούν μια μεγάλη κατηγορία γραφημάτων που περιλαμβάνει interval, permutation, trapezoid, και cocomparability γραφήματα.
+Στη παρούσα εργασία παρουσιάζουμε την υλοποίηση τριών αλγορίθμων για τα ΑΤ-free γραφήματα που τρέχουν σε πολυωνυμικό χρόνο. Τον αλγόριθμο των Broersma, H., Kloks, T., Kratsch, D. and Müller, H.\cite{at-free-independent-sets} για τον υπολογισμό του μέγιστου ανεξάρτητου συνόλου, με χρονική πολυπλοκότητα $O(n^4)$. Τον αλγόριθμο του Dieter Kratsch\cite{at-free-domination} για τον υπολογισμό του ελάχιστου κυρίαρχου συνόλου, με χρονική πολυπλοκότητα $O(n^6)$. Και τον αλγόριθμο του Juraj Stacho\cite{at-free-3-colouring} για την επίλυση του προβλήματος του 3-χρωματισμού, με χρονική πολυπλοκότητα $O(n^2m)$
+
+% -------------
+% SECTION START
+% -------------
+\section{Βασικοί Ορισμοί}
+\label{sec:Definitions}
+
+Ακολουθούν βασικοί ορισμοί που απαιτούνται για την παρούσα εργασία.
+
+\begin{definition}
+	\textit{Γράφημα (Graph)} είναι μια δομή που αποτελείται από ένα σύνολο κορυφών που συνδέονται μεταξύ τους με ένα σύνολο ακμών και το συμβολίζουμε με $G =(V,E)$, όπου $V$ και $E$ είναι τα σύνολα των κορυφών και των ακμών αντίστοιχα. 
+\end{definition}
+
+
+\begin{definition}
+	\textit{Μονοπάτι (Path)} μεταξύ δύο κορυφών σε ένα γράφημα ονομάζεται μια ακολουθία διαφορετικών κορυφών, όπου κάθε κορυφή της ακολουθίας συνδέεται με την επόμενή της μέσω ακμής.
+\end{definition}
+
+\begin{definition}
+	Έστω γράφημα $G$. Λέμε ότι ένα σύνολο κορυφών $S \subseteq V(G)$ είναι \textit{ανεξάρτητο σύνολο} του $G$ αν κανένα ζεύγος κορυφών από το $S$ δεν είναι ακμή του $G$. 
+\end{definition}
+
+\begin{definition}
+	Ο \textit{αριθμός ανεξαρτησίας} $\alpha(G)$ ενός γραφήματος $G$, είναι το μέγιστο πλήθος ενός ανεξάρτητου συνόλου του $G$.
+\end{definition}
+
+\begin{definition}
+	Ένα \textit{κυρίαρχο σύνολο} ενός γραφήματος $G$ είναι ένα υποσύνολο κορυφών $D$ τέτοιο ώστε κάθε κορυφή του $G$ είτε ανήκει στο $D$ είτε είναι γειτονική με μία κορυφή που ανήκει στο $D$.
+\end{definition}
+
+\begin{definition}
+	Ο \textit{αριθμός κυριαρχίας} $\gamma(G)$ είναι ο αριθμός των κορυφών στο μικρότερο σύνολο κυριαρχίας του $G$.
+\end{definition}
+
+\begin{definition}
+	Ο \textit{χρωματικός αριθμός} ενός γραφήματος $G$ είναι το ελάχιστο πλήθος χρωμάτων που απαιτούνται για να χρωματιστούν οι κορυφές του $G$ έτσι ώστε να μην υπάρχουν δύο γειτονικές κορυφές με το ίδιο χρώμα.
+\end{definition}
+
+\begin{definition}
+	Το \textit{πρόβλημα του 3-χρωματισμού} αφορά εάν ένα γραφήμα $G$ μπορεί να χρωματιστεί χρησιμοποιώντας μόνο τρία χρώματα, έτσι ώστε να μην υπάρχουν δύο γειτονικές κορυφές με το ίδιο χρώμα.
+\end{definition}
+
+\begin{definition}
+	Μια \textit{αστεροειδής τριάδα} σε ένα γράφημα αποτελείται από τρεις μη γειτονικές κορυφές, έτσι ώστε να υπάρχει μονοπάτι μεταξύ κάθε ζευγαριού από αυτές που αποφεύγει την κλειστή γειτονιά της τρίτης. 
+\end{definition}
+
+\begin{definition}
+	Ένα γράφημα ονομάζεται \textit{AT-free} εάν δεν περιέχει καμία αστεροειδή τριάδα.
+\end{definition}
+
+
+% -------------
+% SECTION START
+% -------------
+
+\section{Αντικείμενο της Διπλωματικής Εργασίας}
+\label{sec:Thesis_Subject}
+
+Στην παρούσα διπλωματική εργασία, μελετούμε  και υλοποιούμε τρεις αλγορίθμους για την επίλυση προβλημάτων σε AT-free γραφήματα.
+
+Ειδικότερα, μελετάμε τον αλγόριθμο των Ηajo Βroersma , Τon Κloks , Dieter Kratsch , και Ηaiko Μüller\cite{at-free-independent-sets} για τον υπολογισμό του ανεξάρτητου αριθμού. Τον αλγόριθμο του Dieter Kratsch\cite{at-free-domination} για τον εντοπισμό ελάχιστου κυρίαρχου συνόλου και τον αλγόριθμο του Juraj Stacho\cite{at-free-3-colouring}  για την αντιμετώπιση του προβλήματος του 3-χρωματισμού σε ΑΤ-free γραφήματα. 
+
+Ο σκοπός αυτής της εργασίας είναι η βαθύτερη κατανόηση της δομής και των αλγοριθμικών ιδιοτήτων των AT-free γραφημάτων, μέσω της εφαρμογής και επικύρωσης αυτών των αλγορίθμων. Όλοι αυτοί οι αλγόριθμοι επιτυγχάνουν το αποτέλεσμα τους σε πολυωνυμικό χρόνο. 
+
+% -------------
+% SECTION START
+% -------------
+
+\section{Σχετικά Ερευνητικά Αποτελέσματα}
+\label{sec:Similar_results}
+
+Η εύρεση της αλγοριθμικής πολυπλοκότητας των ανεξάρτητων συνόλων σε AT-free γραφήματα  αποτελεί μια σημαντική πρόκληση. Αν και τα ανεξάρτητα σύνολα είναι ένα κλασσικό NP-πλήρες πρόβλημα, τα ΑΤ-free γραφήματα παρουσιάζουν μοναδικές προκλήσεις. Σε αντίθεση με άλλες υποκατηγορίες, όπως τα cocomparability γραφήματα, τα γραφήματα ΑΤ-free δεν είναι τέλεια. Ως εκ τούτου, οι πολυωνυμικοί αλγόριθμοι που αναπτύχθηκαν για τέλεια γραφήματα, όπως αυτοί των Grötschel, Lovász και Schrijver\cite{tolerance-graphs-recognition}, δεν εφαρμόζονται σε αυτή την περίπτωση.
+
+Για τον υπολογισμό ενός ελάχιστου κυρίαρχου συνόλου έχουν σχεδιαστεί αλγόριθμοι πολυωνυμικού χρόνου για πολλές κατηγορίες γράφων (βλ.\cite{arnborg-combinatorial-algorithms,johnson-np-completeness-column}). Για παράδειγμα, υπάρχουν αποδοτικοί αλγόριθμοι για τον υπολογισμό ενός  ελάχιστου κυρίαρχου συνόλου για τις
+ακόλουθες κατηγορίες γραφημάτων: interval graphs \cite{chang-domination-interval-circular-arc},
+strongly chordal graphs\cite{chang-labelling-sunfree-chordal,farber-strongly-chordal-duality} , cographs\cite{corneil-perl-clustering-domination}, permutation graphs\cite{corneil-stewart-dominating-perfect-graphs,farber-keil-domination-permutation,rhee-liang-dhall-lakshmivarahan-permutation-graph-algorithm,rhee-liang-dhall-lakshmivarahan-permutation-graph-algorithm}, k-
+polygon graphs \cite{elmallah-stewart-polygon-graphs}, cocomparability graphs \cite{breu-kirkpatrick-cocomparability-graphs,kratsch-stewart-cocomparability-domination}, circular-arc graphs \cite{chang-domination-interval-circular-arc-1998} and dually chordal graphs\cite{brandstadt-chepoi-dragan-hypertree-1998}. Ιδιαίτερα ενδιαφέρον είναι ο αλγόριθμος των Breu και Kirkpatrick σχετικά με μια υποκατηγορία των AT-free γραφημάτων. Έχουν δώσει αλγορίθμους $O(nm^2)$ για τον υπολογισμό   ελάχιστου κυρίαρχου συνόλου και ενός ολικού ελάχιστου κυρίαρχου συνόλου στα cocomparability γραφήματα\cite{breu-kirkpatrick-cocomparability-graphs}
+
+
+Το πρόβλημα του χρωματισμού είναι ένα από τα πρώτα προβλήματα που γνωρίζουμε ότι είναι NP-hard\cite{garey-johnson-np-completeness}. Αυτό ισχύει και για ιδικές κλάσεις γραφημάτων όπως τα planar graphs\cite{garey-johnson-stockmeyer-simplified-np}, line graphs\cite{holyer-np-completeness-edge-coloring}, regular graphs\cite{dailey-uniqueness-colorability-np-complete} ή ακόμα και για σταθερό αριθμό k χρωμάτων (γνωστό και ώς το πρόβλημα του 3-χρωματισμού)\cite{garey-johnson-stockmeyer-simplified-np}.Αντίθετα, για σενάρια με δύο ή λιγότερα χρώματα, το πρόβλημα επιλύεται σε πολυωνυμικό χρόνο. Αυτό ισχύει επίσης για ορισμένες κατηγορίες γραφημάτων με μοναδικές ιδιότητες, όπως τα interval graphs
+\cite{golumbic-algorithmic-graph-theory-perfect-graphs}, chordal graphs \cite{golumbic-algorithmic-graph-theory-perfect-graphs}, comparability graphs \cite{golumbic-algorithmic-graph-theory-perfect-graphs}, και γενικότερα για τέλεια
+γραφήματα\cite{grotschel-lovasz-schrijver-ellipsoid-method}. 
+
+
+% -------------
+% SECTION START
+% -------------
+
+\section{Δομή της Διπλωματικής Εργασίας}
+\label{sec:Structure}
+Η διπλωματική εργασία αναπτύσσεται σε τρία κεφάλαια. Αναλύεται η λύση προβλημάτων σε AT-free γραφήματα  \ref{ch:Algorithms}, όπου εξετάζονται διάφοροι αλγόριθμοι. Στο επόμενο κεφάλαιο \ref{ch:Implementation}, παρουσιάζεται η λεπτομερής αναπαράσταση των δεδομένων, οι χρήσιμες δομές δεδομένων και η υλοποίηση κάθε αλγορίθμου. Στο τελευταίο κεφάλαιο \ref{ch:Conclusion} γίνεται σύνοψη των ευρημάτων, αναφέρονται δυνατές βελτιώσεις και προτείνεται πώς η υπάρχουσα υλοποίηση θα μπορούσε να τροποποιηθεί για την εκπόνηση πιστοποιητικών που επιβεβαιώνουν την ακρίβεια των αποτελεσμάτων.
