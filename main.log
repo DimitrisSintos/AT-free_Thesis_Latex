@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.2.8)  8 FEB 2024 18:01
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.2.7)  14 FEB 2024 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,9 +1082,6 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 ] [2]
 
-LaTeX Warning: Reference `ch:' on page 3 undefined on input line 96.
-
-
 LaTeX Warning: Reference `ch:Implementation' on page 3 undefined on input line 
 96.
 
@@ -1101,13 +1098,14 @@ LaTeX Warning: Reference `ch:Conclusion' on page 3 undefined on input line 96.
 
 
 
-]
+] [6]
 \openout2 = `Content/Chapter3.aux'.
 
  (./Content/Chapter3.tex)
 \openout2 = `Content/Chapter4.aux'.
 
- (./Content/Chapter4.tex) (./main.bbl [6
+ (./Content/Chapter4.tex) (./main.bbl
+[7
 
 
 
@@ -1118,14 +1116,13 @@ LaTeX Warning: Reference `ch:Conclusion' on page 3 undefined on input line 96.
 
 
 
-]
-[7])
+] [8])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
 \openout4 = `main.maf'.
 
- [8] (./main.aux (./FrontMatter/Acknowledgements.aux)
+ [9] (./main.aux (./FrontMatter/Acknowledgements.aux)
 (./FrontMatter/Abstract.aux) (./FrontMatter/BilingualAbstract.aux)
 (./Content/Chapter1.aux) (./Content/Chapter2.aux) (./Content/Chapter3.aux)
 (./Content/Chapter4.aux))
@@ -1136,12 +1133,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 94EFF7AA1FD58649574C982ACF4DC3AF;2862.
  ) 
 Here is how much of TeX's memory you used:
- 21635 strings out of 476191
- 401482 string characters out of 5812073
- 793862 words of memory out of 5000000
- 41773 multiletter control sequences out of 15000+600000
+ 21634 strings out of 476191
+ 401477 string characters out of 5812073
+ 793821 words of memory out of 5000000
+ 41772 multiletter control sequences out of 15000+600000
  475098 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,17n,99p,782b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,17n,99p,777b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (14 pages).
+Output written on main.pdf (15 pages).
