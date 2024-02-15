@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.2.7)  14 FEB 2024 14:13
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.2.8)  15 FEB 2024 14:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1093,19 +1093,18 @@ LaTeX Warning: Reference `ch:Conclusion' on page 3 undefined on input line 96.
 
  (./Content/Chapter2.tex
 Κεφάλαιο 2.
-) [5
+[5
 
 
 
 
-] [6]
+]) [6]
 \openout2 = `Content/Chapter3.aux'.
 
  (./Content/Chapter3.tex)
 \openout2 = `Content/Chapter4.aux'.
 
- (./Content/Chapter4.tex) (./main.bbl
-[7
+ (./Content/Chapter4.tex) (./main.bbl [7
 
 
 
@@ -1116,7 +1115,8 @@ LaTeX Warning: Reference `ch:Conclusion' on page 3 undefined on input line 96.
 
 
 
-] [8])
+]
+[8])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
