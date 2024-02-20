@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.2.8)  19 FEB 2024 19:42
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.2.8)  20 FEB 2024 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1389,14 +1389,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 [6] [7]
 File: pictures/at-free-graph.png Graphic file (type bmp)
 <pictures/at-free-graph.png>
- [8]) [9]
+ [8] [9] [10]) [11] [12]
 \openout2 = `Content/Chapter3.aux'.
 
  (./Content/Chapter3.tex)
 \openout2 = `Content/Chapter4.aux'.
 
- (./Content/Chapter4.tex) (./main.bbl
-[10
+
+(./Content/Chapter4.tex) (./main.bbl [13
 
 
 
@@ -1407,29 +1407,29 @@ File: pictures/at-free-graph.png Graphic file (type bmp)
 
 
 
-] [11])
+] [14])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
 \openout4 = `main.maf'.
 
- [12] (./main.aux (./FrontMatter/Acknowledgements.aux)
-(./FrontMatter/Abstract.aux) (./FrontMatter/BilingualAbstract.aux)
-(./Content/Chapter1.aux) (./Content/Chapter2.aux) (./Content/Chapter3.aux)
-(./Content/Chapter4.aux))
+ [15] (./main.aux
+(./FrontMatter/Acknowledgements.aux) (./FrontMatter/Abstract.aux)
+(./FrontMatter/BilingualAbstract.aux) (./Content/Chapter1.aux)
+(./Content/Chapter2.aux) (./Content/Chapter3.aux) (./Content/Chapter4.aux))
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 03C6F5447989A6D19E67138E4CF2433D;2862.
+(rerunfilecheck)             Checksum: A3126C7E5683820B3B6B91DDBF40F677;2863.
  ) 
 Here is how much of TeX's memory you used:
- 32353 strings out of 476191
- 642871 string characters out of 5812073
- 1006361 words of memory out of 5000000
- 52272 multiletter control sequences out of 15000+600000
+ 32359 strings out of 476191
+ 643055 string characters out of 5812073
+ 1009908 words of memory out of 5000000
+ 52278 multiletter control sequences out of 15000+600000
  475106 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,17n,99p,856b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (18 pages).
+Output written on main.pdf (21 pages).

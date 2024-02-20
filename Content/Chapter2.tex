@@ -91,53 +91,161 @@ $n$ και τον αριθμό των ακμών με $m$.
 	\label{fig:at-free-graph-example}
 \end{figure}
 
-Μετά την εκτέλεση του πρώτου βήματος τα $Components$ που υπολογίσαμε φαίνονται στον πίνακα 
+Μετά την εκτέλεση του πρώτου βήματος τα $Components$ που υπολογίσαμε φαίνονται στον πίνακα \ref{table:first-step-intependent-set} 
 
 % Components
 \begin{table}[H]
+	
 	\centering
-	\caption{Components of the Graph}
+	\caption{Components του γραφήματος μετά την εκτέλεση του πρώτου βήματος}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\textbf{Component} & \textbf{Vertex Set} & \textbf{Alpha} \\
+		\textbf{Component} & \textbf{Σύνολο κορυφών} & \textbf{Alpha} \\
 		\hline
-		$C_0^7$ & \{1, 3, 0, 2\} & - \\
-		$C_0^1$ & \{7, 6\} & - \\
-		$C_0^6$ & \{1, 4, 5, 0\} & - \\
-		$C_0^5$ & \{4, 6, 3, 2\} & - \\
-		$C_1^5$ & \{0\} & - \\
-		5 & \{7, 5\} & - \\
-		6 & \{0\} & - \\
-		7 & \{2\} & - \\
-		8 & \{7, 6, 5, 3, 2, 4\} & - \\
-		9 & \{7, 4, 5, 3\} & - \\
-		10 & \{0\} & - \\
-		11 & \{5\} & - \\
-		 $C_0^4$ & \{6, 2\} & - \\
-		 $C_1^4$ & \{0\} & - \\
+		$C_1^2$ & \quad \{3, 4, 5, 7\} & - \\
+		$C_2^2$ & \quad \{0\} & - \\
+		$C_1^5$ & \quad \{2, 3, 4, 6\} & - \\
+		$C_2^5$ & \quad \{0\} & - \\
+		$C_1^1$ & \quad \{6, 7\} & - \\
+		$C_1^0$ & \quad \{2, 3, 4, 5, 6, 7\} & - \\
+		$C_1^4$ & \quad \{2, 6\} & - \\
+		$C_2^4$ & \quad \{5\} & - \\
+		$C_3^4$ & \quad \{0\} & - \\
+		$C_1^7$ & \quad \{0, 1, 2, 3\} & - \\
+		$C_1^3$ & \quad \{2\} & - \\
+		$C_2^3$ & \quad \{5, 7\} & - \\
+		$C_3^3$ & \quad \{0\} & - \\
+		$C_1^6$ & \quad \{0, 1, 4, 5\} & - \\
 		\hline
 	\end{tabular}
+\label{table:first-step-intependent-set}
 \end{table}
 
-% Number of Components
+Για το δεύτερο βήμα του αλγορίθμου, παίρνοντας όλους τους συνδυασμούς μη γειτονικών κορυφών για το παρών γράφημα. Τα $Intervals$ που προκύπτουν φαίνονται στον παρακάτω πίνακα\ref{table:second-step-intependent-set}. 
+
 \begin{table}[H]
+	
 	\centering
-	\caption{Number of Components for Each Vertex}
-	\begin{tabular}{|c|c|}
+	\caption{Intervals του γραφήματος μετά την εκτέλεση του δεύτερου βήματος}
+	\begin{tabular}{|c|c|c|}
 		\hline
-		\textbf{Vertex} & \textbf{Number of Components} \\
+		\textbf{Intervals} & \textbf{Σύνολο κορυφών} & \textbf{Alpha} \\
 		\hline
-		7 & 1 \\
-		1 & 1 \\
-		6 & 1 \\
-		5 & 2 \\
-		3 & 3 \\
-		0 & 1 \\
-		2 & 2 \\
-		4 & 3 \\
+		I(2, 5) & \quad \{3, 4\} & - \\
+		I(2, 7) & \quad \{3\} & - \\
+		I(5, 2) & \quad \{3, 4\} & - \\
+		I(5, 6) & \quad \{4\} & - \\
+		I(0, 7) & \quad \{2, 3\} & - \\
+		I(0, 6) & \quad \{4, 5\} & - \\
+		I(7, 2) & \quad \{3\} & - \\
+		I(7, 0) & \quad \{2, 3\} & - \\
+		I(6, 5) & \quad \{4\} & - \\
+		I(6, 0) & \quad \{4, 5\} & - \\
 		\hline
 	\end{tabular}
+\label{table:second-step-intependent-set}
 \end{table}
+
+Όπως φαίνεται και στους πίνακες \ref{table:sorted-components} και \ref{table:sorted-intervals},μετά το τρίτο βήμα τα $Components$ και $Intervals$ ταξινομούνται με βάση το πλήθος των κορυφών τους, από το μικρότερο στο μεγαλύτερο.
+
+\begin{table}[H]
+	\centering
+	\caption{Ταξινόμηση Components με βάση το σύνολο κορυφών}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Components} & \textbf{Σύνολο Κορυφών} & \textbf{Alpha} \\
+		\hline
+		$C_2^2$ & \{0\} & - \\
+		$C_2^5$ & \{0\} & - \\
+		$C_3^4$ & \{0\} & - \\
+		$C_3^3$ & \{0\} & - \\
+		$C_2^4$ & \{5\} & - \\
+		$C_1^7$ & \{0, 1, 2, 3\} & - \\
+		$C_1^1$ & \{6, 7\} & - \\
+		$C_1^4$ & \{2, 6\} & - \\
+		$C_1^3$ & \{2\} & - \\
+		$C_1^2$ & \{3, 4, 5, 7\} & - \\
+		$C_1^5$ & \{2, 3, 4, 6\} & - \\
+		$C_1^6$ & \{0, 1, 4, 5\} & - \\
+		$C_1^0$ & \{2, 3, 4, 5, 6, 7\} & - \\
+		\hline
+	\end{tabular}
+	\label{table:sorted-components}
+\end{table} 
+
+\begin{table}[H]
+	\centering
+	\caption{Ταξινόμηση Intervals με βάση το σύνολο κορυφών}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Intervals} & \textbf{Σύνολο Κορυφών} & \textbf{Alpha} \\
+		\hline
+		I(2, 7) & \{3\} & - \\
+		I(5, 6) & \{4\} & - \\
+		I(7, 2) & \{3\} & - \\
+		I(6, 5) & \{4\} & - \\
+		I(2, 5) & \{3, 4\} & - \\
+		I(5, 2) & \{3, 4\} & - \\
+		I(0, 7) & \{2, 3\} & - \\
+		I(0, 6) & \{4, 5\} & - \\
+		I(7, 0) & \{2, 3\} & - \\
+		I(6, 0) & \{4, 5\} & - \\
+		\hline
+	\end{tabular}
+	\label{table:sorted-intervals}
+\end{table}
+
+Χρησιμοποιώντας τα λήμματα \ref{lemma6_1}, \ref{lemma6_2} και εφαρμόζοντας τεχνικές δυναμικού προγραμματισμού, μετά την εκτέλεση του βήματος τέσσερα έχουν υπολογιστεί τα alpha όλων των $Components$ και $Intervals$. Τα αποτελέσματα φαίνονται στους πίνακες \ref{table:computed-alpha-componentes}  και \ref{table:computed-alpha-intervals}
+
+\begin{table}[H]
+	\centering
+	\caption{Πίνακας Components μετά την εκτέλεση του βήματος 4 του αλγορίθμου}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Components} & \textbf{Σύνολο Κορυφών} & \textbf{Alpha} \\
+		\hline
+		$C_2^2$ & \{0\} & 1 \\
+		$C_2^5$ & \{0\} & 1 \\
+		$C_3^4$ & \{0\} & 1 \\
+		$C_3^3$ & \{0\} & 1 \\
+		$C_2^4$ & \{5\} & 1 \\
+		$C_1^7$ & \{0, 1, 2, 3\} & 3 \\
+		$C_1^1$ & \{6, 7\} & 1 \\
+		$C_1^4$ & \{2, 6\} & 1 \\
+		$C_1^3$ & \{2\} & 1 \\
+		$C_1^2$ & \{3, 4, 5, 7\} & 2 \\
+		$C_1^5$ & \{2, 3, 4, 6\} & 2 \\
+		$C_1^6$ & \{0, 1, 4, 5\} & 3 \\
+		$C_1^0$ & \{2, 3, 4, 5, 6, 7\} & 3 \\
+		\hline
+	\end{tabular}
+	\label{table:computed-alpha-componentes}
+\end{table} 
+
+\begin{table}[H]
+	\centering
+	\caption{Πίνακας Intervals μετά την εκτέλεση του βήματος 4 του αλγορίθμου}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Intervals} & \textbf{Σύνολο Κορυφών} & \textbf{Alpha} \\
+		\hline
+		I(2, 7) & \{3\} & 1 \\
+		I(5, 6) & \{4\} & 1 \\
+		I(7, 2) & \{3\} & 1 \\
+		I(6, 5) & \{4\} & 1 \\
+		I(2, 5) & \{3, 4\} & 1 \\
+		I(5, 2) & \{3, 4\} & 1 \\
+		I(0, 7) & \{2, 3\} & 2 \\
+		I(0, 6) & \{4, 5\} & 2 \\
+		I(7, 0) & \{2, 3\} & 2 \\
+		I(6, 0) & \{4, 5\} & 2 \\
+		\hline
+	\end{tabular}
+	\label{table:computed-alpha-intervals}
+\end{table}
+
+Στο τελευταίο βήμα με την εφαρμογή του λήμματος \ref{lemma6_1}, είναι προφανές ότι ο αριθμός ανεξαρτησίας για το παρόν γράφημα είναι τέσσερα. Αυτό μπορεί, στο συγκεκριμένο παράδειγμα, να προκύψει από διάφορες κορυφές.
+
 
 
 \section{Υπολογισμός Ελάχιστου Κυρίαρχου Συνόλου}
