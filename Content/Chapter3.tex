@@ -1,0 +1,70 @@
+\chapter{Η Υλοποίηση}
+\label{ch:Implementation}
+
+\newcommand{\myTTT}[1]{\texttt{\hyphenchar \font=`\- \spaceskip=.5em plus .5em \xspaceskip=.5em #1}}
+
+Υλοποιήσαμε όλους τους αλγορίθμους που αναφέραμε στο Κεφάλαιο \ref{ch:Algorithms} και σχεδιάσαμε μια γραφική διαπροσωπεία για την οπτικοποίηση της εισόδου και των
+αποτελεσμάτων. Η υλοποίηση έγινε στη γλώσσα προγραμματισμού \textbf{Python 3} και η οπτικοποίηση με την βιβλιοθήκη \textbf{PyVis}\cite{pyvis-docs}
+
+\section{Οργάνωση Κώδικα}
+
+Η γενική αρχιτεκτονική για την επίλυση του κάθε αλγορίθμου είναι η ίδια σε κάθε περίπτωση. Πιο συγκεκριμένα η υλοποίηση οργανώνεται στα αρχεία: 
+\begin{itemize}
+	\item \myTTT{main.py} : η αρχή του εκτελέσιμου προγράμματος.
+	
+	\item \myTTT{graph.py} : η διευθύνουσα κλάση του γραφήματος.
+	
+	\item \myTTT{polynomial\_time\_algorithm.py} : η διευθύνουσα κλάση για την υλοποίηση του αλγορίθμου.
+	 
+\end{itemize} 
+
+Επιπλέον αρχεία υλοποιούν κλάσεις οι οποίες είναι απαραίτητες για την υλοποίηση των επιμέρους αλγορίθμων. Αναλυτικά θα τις αναλύσουμε στις αντίστοιχες ενότητες. 
+
+\section{Είσοδος - Έξοδος}
+
+Κάθε αλγόριθμος παίρνει σαν είσοδο ένα AT-free γράφημα. Η αναπαράσταση του γραφήματος έχει γίνει σε αρχείο JSON καθώς η διαχείριση τους είναι αρκετά εύκολη από γλώσσες προγραμματισμού όπως η \textbf{Python}. 
+
+Το αρχείο JSON έχει τα κλειδιά "num\_of\_vertices" και "num\_of\_edges" τα οποία δηλώνουν τον αριθμό των κόμβος του γραφήματος και ακμών αντίστοιχα. Οι τιμές που παίρνουν είναι θετική ακέραιοι $\mathbb{N}$. Επιπλέον υπάρχει το κλειδί "edges" το οποίο έχει όλες τις ακμές του γραφήματος. Η δήλωση των ακμών γίνεται με έναν δισδιάστατο πίνακα που περιέχει ζεύγη ακεραίων που υποδηλώνουν τους συνδεδεμένους κόμβους.
+
+Το αρχείο υφίσταται μια ανάλυση προκειμένου να επιβεβαιωθεί η απουσία AT (asteroidal triple). Αυτή η ανάλυση δεν είναι η βέλτιστη αλλά μας διασφαλίζει ότι το γράφημα είναι AT-free. Η κλάσει για την ανάλυση του αρχείου:
+
+\lstinputlisting[
+language=Python,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={graph\_parser.py}
+]{Content/CodeDirectory/graph_parser.py}
+
+
+
+Αν η ανάλυση του γραφήματος είναι επιτυχημένη, τότε δημιουργείται ένα αντικείμενο τύπου Graph. Παρακάτω παρουσιάζεται ο ορισμός του Graph, καθώς και τα πεδία που δημιουργούνται. Τα συγκεκριμένα πεδία είναι κοινά και για τους τρεις αλγορίθμους που έχουμε υλοποιήσει. 
+
+\begin{lstlisting}[
+	language=Python,
+	breaklines=true,
+	basicstyle=\footnotesize\ttfamily,
+	columns=fullflexible,
+	breakatwhitespace=false,
+	captionpos=t,
+	caption={Your Python Code},
+	label={lst:python_code}
+	]
+	class Graph:
+		def __init__(self, num_of_vertices, 	num_of_edges, edges, vertices=None):
+			self.num_of_vertices = num_of_vertices
+			self.num_of_edges = num_of_edges
+			self.vertices = set(str(i) for i in range(num_of_vertices)) if vertices is None else vertices
+			self.edges = set((str(u), str(v)) for u, v in edges)
+			self.adjacency_list = {str(vertex): set() for vertex in self.vertices}
+			for edge in self.edges:
+				u, v = edge
+				self.adjacency_list[u].add(v)
+				self.adjacency_list[v].add(u)
+\end{lstlisting}
+
+
+\section{Δομές Δεδομένων}
+

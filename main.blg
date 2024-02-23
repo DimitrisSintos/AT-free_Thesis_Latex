@@ -18,6 +18,8 @@ Repeated entry---line 210 of file Content/Bibliography.bib
  : @article{garey-johnson-stockmeyer-simplified-np
  :                                                ,
 I'm skipping whatever remains of this entry
+Warning--entry type for "pyvis-docs" isn't style-file defined
+--line 255 of file Content/Bibliography.bib
 Too many commas in name 1 of "Broersma, H., Kloks, T., Kratsch, D. and Müller, H." for entry at-free-independent-sets
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Broersma, H., Kloks, T., Kratsch, D. and Müller, H." for entry at-free-independent-sets
@@ -74,45 +76,45 @@ Too many commas in name 1 of "Rhee, C., Liang, Y.D., Dhall, S.K. and Lakshmivara
 while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "Rhee, C., Liang, Y.D., Dhall, S.K. and Lakshmivarahan, S." for entry rhee-liang-dhall-lakshmivarahan-permutation-graph-algorithm
 while executing---line 1090 of file plain.bst
-You've used 25 entries,
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            653 strings with 7715 characters,
-and the built_in function-call counts, 7266 in all, are:
-= -- 736
-> -- 240
+            658 strings with 7830 characters,
+and the built_in function-call counts, 7472 in all, are:
+= -- 755
+> -- 247
 < -- 0
-+ -- 103
-- -- 72
-* -- 490
-:= -- 1246
-add.period$ -- 75
-call.type$ -- 25
-change.case$ -- 110
++ -- 106
+- -- 74
+* -- 496
+:= -- 1280
+add.period$ -- 78
+call.type$ -- 26
+change.case$ -- 114
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 272
-empty$ -- 629
-format.name$ -- 72
-if$ -- 1519
+cite$ -- 26
+duplicate$ -- 279
+empty$ -- 651
+format.name$ -- 74
+if$ -- 1564
 int.to.chr$ -- 0
-int.to.str$ -- 25
+int.to.str$ -- 26
 missing$ -- 26
-newline$ -- 128
-num.names$ -- 50
-pop$ -- 69
+newline$ -- 133
+num.names$ -- 52
+pop$ -- 78
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 89
 quote$ -- 0
-skip$ -- 179
+skip$ -- 186
 stack$ -- 0
-substring$ -- 588
-swap$ -- 24
+substring$ -- 593
+swap$ -- 25
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 96
+type$ -- 100
 warning$ -- 0
-while$ -- 76
-width$ -- 27
-write$ -- 277
+while$ -- 78
+width$ -- 28
+write$ -- 287
 (There were 30 error messages)
