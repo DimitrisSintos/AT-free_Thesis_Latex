@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.2.8)  24 FEB 2024 19:46
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.2.8)  26 FEB 2024 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1422,11 +1422,11 @@ LaTeX Font Info:    Font shape `TU/UbuntuMono(0)/b/n' will be
 (Font)              scaled to size 9.49997pt on input line 1.
 LaTeX Font Info:    Font shape `TU/UbuntuMono(0)/m/it' will be
 (Font)              scaled to size 9.49997pt on input line 15.
- [15] [16])) [17]
+ [15] [16]) [17] [18]) [19]
 \openout2 = `Content/Chapter4.aux'.
 
 
-(./Content/Chapter4.tex) (./main.bbl [18
+(./Content/Chapter4.tex) (./main.bbl [20
 
 
 
@@ -1434,13 +1434,13 @@ LaTeX Font Info:    Font shape `TU/UbuntuMono(0)/m/it' will be
 
 
 
-] [19])
+] [21])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
 \openout4 = `main.maf'.
 
- [20] (./main.aux
+ [22] (./main.aux
 (./FrontMatter/Acknowledgements.aux) (./FrontMatter/Abstract.aux)
 (./FrontMatter/BilingualAbstract.aux) (./Content/Chapter1.aux)
 (./Content/Chapter2.aux) (./Content/Chapter3.aux) (./Content/Chapter4.aux))
@@ -1451,12 +1451,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1C15D59AA925F3348E74E07665215863;3525.
  ) 
 Here is how much of TeX's memory you used:
- 32617 strings out of 476191
- 646658 string characters out of 5812073
- 1313142 words of memory out of 5000000
- 52519 multiletter control sequences out of 15000+600000
+ 32619 strings out of 476191
+ 646704 string characters out of 5812073
+ 1319142 words of memory out of 5000000
+ 52521 multiletter control sequences out of 15000+600000
  475138 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,17n,99p,960b,2096s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,17n,99p,1106b,2096s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (26 pages).
+Output written on main.pdf (28 pages).
