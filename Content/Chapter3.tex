@@ -28,6 +28,9 @@
 
 Το αρχείο υφίσταται μια ανάλυση προκειμένου να επιβεβαιωθεί η απουσία AT (asteroidal triple). Αυτή η ανάλυση δεν είναι η βέλτιστη αλλά μας διασφαλίζει ότι το γράφημα είναι AT-free. Η κλάση για την ανάλυση του αρχείου:
 
+
+\captionsetup[lstlisting]{labelformat = empty}
+
 \lstinputlisting[
 language=Python,
 breaklines=true,
@@ -121,7 +124,7 @@ caption={graph\_parser.py}
 
 Στο παρόν κεφάλαιο, παρουσιάζουμε ενδεικτικές κλάσεις που αποτελούν το αλγοριθμικό τμήμα για τον υπολογισμό του μέγιστου ανεξάρτητου συνόλου. Προχωρούμε στην παρουσίαση αυτών των κλάσεων με τη σειρά που καλούνται στο πλαίσιο του συνολικού αλγοριθμικού σχεδιασμού. Σημειώνουμε πως παραλείπουμε τις κλάσεις που υλοποιούν αλγορίθμους από άλλες εργασίες, όπως ο αλγόριθμος του Bucket sort.
 
-\captionsetup[lstlisting]{labelformat = empty}
+
 
 \subsection{H Kλάση PolynomialTimeAlgorithm}
 \label{subsec:PolynomialTimeAlgorithm-IndependentSet}
@@ -141,20 +144,24 @@ caption={graph\_parser.py}
 ]{Content/CodeDirectory/polynomial_time_algorithm_independent_set.py}
 %---------------FILE END---------------------------------
 
-Εξηγούμε αναλυτικά τις συναρτήσεις την κλάσεις:
+Εξηγούμε αναλυτικά τις συναρτήσεις της κλάσης:
 
 \begin{enumerate}
-	\item Κατασκευαστής (\_\_init\_\_): Δέχεται ένα αντικείμενο  graph και αρχικοποιεί τα χαρακτηριστικά της κλάσης, όπως τα σύνολα "max\_interval\_vertices\_set" και "max\_component\_vertices\_set".
+	\item Κατασκευαστής (\_\_init\_\_): Δέχεται ένα αντικείμενο  Graph και αρχικοποιεί τα χαρακτηριστικά της κλάσης, όπως τα σύνολα "max\_interval\_vertices\_set" και "max\_component\_vertices\_set".
 	\item H συνάρτηση \myTTT{computing\_independent\_set}: Είναι η κύρια συνάρτηση που εκτελεί τα βήματα του αλγορίθμου για τον υπολογισμό του μέγιστου ανεξάρτητου συνόλου.
 	\item Η συνάρτηση \myTTT{alpha\_C}: Υλοποιεί το λήμμα \ref{lemma6_3}.
 	\item H συνάρτηση \myTTT{alpha\_I}: Υλοποιεί το λήμμα \ref{lemma6_2}.
 	\item H συνάρτηση \myTTT{alpha\_G}: Υλοποιεί το λήμμα \ref{lemma6_1}.
 	\item Η συνάρτηση \myTTT{compute\_components\_subset} λαμβάνει ως είσοδο έναν κόμβο \myTTT{vertex}, ένα σύνολο κορυφών \myTTT{target\_vertices}, και τον αριθμό των $Components$ που πρέπει να εξεταστούν \myTTT{num\_components}. Επιστρέφει μια λίστα με τα κλειδιά των $Components$ που ανήκουν στο σύνολο \myTTT{target\_vertices}. Αυτή η λειτουργία είναι κρίσιμη για τον υπολογισμό των ανεξάρτητων συνόλων στη βάση των Λημμάτων \ref{lemma6_2} και \ref{lemma6_3}.
-	\item Η συνάρτηση \myTTT{compute\_D\_iy} χρησιμοποιεί την \myTTT{compute\_components\_subset} για να υπολογίσει τις συνιστώσες \myTTT{D\_iy}, δηλαδή εκείνες που περιέχονται στο \myTTT{Cx\_vertices} και ανήκουν στη γειτονιά του \myTTT{y}. Η είσοδος αυτής της συνάρτησης περιλαμβάνει τον κόμβο \myTTT{y} και το υποσύνολο κορυφών \myTTT{Cx\_vertices}, ενώ η έξοδός της είναι η λίστα των $Components$ \myTTT{D\_iy}.
+	\item Η συνάρτηση \myTTT{compute\_D\_iy} χρησιμοποιεί την \myTTT{compute\_components\_subset} για να υπολογίσει τα $Components$ \myTTT{D\_iy}, δηλαδή εκείνες που περιέχονται στο \myTTT{Cx\_vertices} και ανήκουν στη γειτονιά του \myTTT{y}. Η είσοδος αυτής της συνάρτησης περιλαμβάνει τον κόμβο \myTTT{y} και το υποσύνολο κορυφών \myTTT{Cx\_vertices}, ενώ η έξοδός της είναι η λίστα των $Components$ \myTTT{D\_iy}.
 	\item Η συνάρτηση \myTTT{compute\_C\_is} λειτουργεί παρόμοια με την \myTTT{compute\_D\_iy}, αλλά χρησιμοποιείται για τον υπολογισμό των $Components$ \myTTT{C\_is}, που περιέχονται στο \myTTT{I\_vertices} και ανήκουν στη γειτονιά του \myTTT{s}. Η είσοδος περιλαμβάνει τον κόμβο \myTTT{s} και το υποσύνολο κορυφών \myTTT{I\_vertices}, ενώ η έξοδός της είναι η λίστα των $Components$ \myTTT{C\_is}.
 \end{enumerate}
+
 \subsection{H Kλάση Graph}
 
+Η κλάση \myTTT{Graph} αποτελεί τη βασική δομή για την παρουσίαση του AT-free γράφηματος, προσφέροντας τις απαραίτητες λειτουργίες για τον υπολογισμό του μέγιστου ανεξάρτητου συνόλου.
+
+%---------------FILE---------------------------------
 \lstinputlisting[
 language=Python,
 breaklines=true,
@@ -165,5 +172,56 @@ captionpos=t,
 caption={graph.py}
 ]{Content/CodeDirectory/graph_independent_set.py}
 %---------------FILE END---------------------------------
+
+Εξηγούμε αναλυτικά τις συναρτήσεις της κλάσης:
+
+\begin{enumerate}
+	\item Συνάρτηση \myTTT{compute\_all\_components}: Υπολογίζει όλα τα $Components$ για κάθε κορυφή του γραφήματος και τις αποθηκεύει στην λίστα των $Component$.
+	
+	\item Συνάρτηση \myTTT{compute\_components\_of\_vertex}: Χρησιμοποιείται για τον υπολογισμό των $Component$ μιας συγκεκριμένης κορυφής.
+	
+	\item Συνάρτηση \myTTT{closed\_neighborhood}: Επιστρέφει την κλειστή γειτονιά μιας κορυφής.
+	
+	\item Συνάρτηση \myTTT{closed\_neighborhood\_of\_set}: Υπολογίζει την κλειστή γειτονιά ενός συνόλου κορυφών.
+	
+	\item Συνάρτηση \myTTT{compute\_all\_intervals}: Υπολογίζει όλα τα $Intervals$ μεταξύ μη γειτονικών κορυφών.
+	
+	\item Συνάρτηση \myTTT{compute\_interval}: Υπολογίζει το $Inteval$ μεταξύ δύο μη γειτονικών κορυφών.
+	
+	\item Συνάρτηση \myTTT{show}: Χρησιμοποιεί το πακέτο \myTTT{pyvis} για να εμφανίσει τον γράφο σε μορφή διαδραστικού δικτύου.
+	
+\end{enumerate}
+
+\subsection{Κλάσεις Component και Interval}
+
+%---------------FILE---------------------------------
+\lstinputlisting[
+language=Python,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={component.py}
+]{Content/CodeDirectory/component.py}
+%---------------FILE END---------------------------------
+
+
+%---------------FILE---------------------------------
+\lstinputlisting[
+language=Python,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={interval.py}
+]{Content/CodeDirectory/interval.py}
+%---------------FILE END---------------------------------
+
+Οι κλάσεις \myTTT{Component} και \myTTT{Interval} λειτουργούν ως βοηθητικές δομές για την αναπαράσταση των $Components$ και των $Intervals$ αντίστοιχα στο AT-free γράφημα. Κάθε αντικείμενο αυτών των κλάσεων διαθέτει πληροφορίες σχετικά με τη θέση του στο γράφημα, τις κορυφές που περιέχει, καθώς και ένα πεδίο για την αποθήκευση τoυ αριθμού ανεξαρτησίας alpha. Η υλοποίηση της μεθόδου \myTTT{\_\_lt\_\_} επιτρέπει τη σωστή λειτουργία της ταξινόμησης, ενώ η μέθοδος \myTTT{\_\_len\_\_} επιστρέφει τον αριθμό των κορυφών του αντικειμένου, βοηθώντας στη διευκόλυνση της σύγκρισης μεταξύ τους. Με αυτόν τον τρόπο, ο κώδικας γίνεται πιο δομημένος και ευανάγνωστος, ενισχύοντας την κατανόηση του αλγορίθμου.
+
+\subsection{Παραδείγματα Εκτέλεσης του Προγράμματος}
+
 
 

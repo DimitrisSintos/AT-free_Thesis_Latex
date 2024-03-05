@@ -22,9 +22,9 @@ class Graph:
         self.components = {}
         self.num_of_components = {}
         self.intervals = {}
+        self.non_adjacent_vertices_component_pointer = {}
         
         self.independent_set = set()
-        self.non_adjacent_vertices_component_pointer = {}
             
     
     def compute_all_components(self):
