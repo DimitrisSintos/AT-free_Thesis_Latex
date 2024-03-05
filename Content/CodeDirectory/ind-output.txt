@@ -1,0 +1,196 @@
+
+Components:
+Component(x=5, i=0, vertices={'6', '2', '4', '3'}, alpha=None)
+Component(x=5, i=1, vertices={'0'}, alpha=None)
+Component(x=7, i=0, vertices={'1', '2', '0', '3'}, alpha=None)
+Component(x=2, i=0, vertices={'5', '4', '7', '3'}, alpha=None)
+Component(x=2, i=1, vertices={'0'}, alpha=None)
+Component(x=3, i=0, vertices={'5', '7'}, alpha=None)
+Component(x=3, i=1, vertices={'2'}, alpha=None)
+Component(x=3, i=2, vertices={'0'}, alpha=None)
+Component(x=6, i=0, vertices={'5', '4', '0', '1'}, alpha=None)
+Component(x=4, i=0, vertices={'5'}, alpha=None)
+Component(x=4, i=1, vertices={'6', '2'}, alpha=None)
+Component(x=4, i=2, vertices={'0'}, alpha=None)
+Component(x=0, i=0, vertices={'5', '7', '2', '3', '6', '4'}, alpha=None)
+Component(x=1, i=0, vertices={'6', '7'}, alpha=None)
+self.graph.num_of_components: {'5': 2, '7': 1, '2': 2, '3': 3, '6': 1, '4': 3, '0': 1, '1': 1}
+
+Intervals:
+Interval(x=5, y=2, vertices={'4', '3'}, alpha=None)
+Interval(x=5, y=6, vertices={'4'}, alpha=None)
+Interval(x=7, y=2, vertices={'3'}, alpha=None)
+Interval(x=7, y=0, vertices={'2', '3'}, alpha=None)
+Interval(x=2, y=5, vertices={'4', '3'}, alpha=None)
+Interval(x=2, y=7, vertices={'3'}, alpha=None)
+Interval(x=6, y=5, vertices={'4'}, alpha=None)
+Interval(x=6, y=0, vertices={'5', '4'}, alpha=None)
+Interval(x=0, y=7, vertices={'2', '3'}, alpha=None)
+Interval(x=0, y=6, vertices={'5', '4'}, alpha=None)
+
+Sorted components: [('5', 1), ('2', 1), ('3', 1), ('3', 2), ('4', 0), ('4', 2), ('3', 0), ('4', 1), ('1', 0), ('5', 0), ('7', 0), ('2', 0), ('6', 0), ('0', 0)] 14 <class 'list'>
+
+Sorted intervals: [('5', '6'), ('7', '2'), ('2', '7'), ('6', '5'), ('5', '2'), ('7', '0'), ('2', '5'), ('6', '0'), ('0', '7'), ('0', '6')] 10 <class 'list'>
+
+Dynamic programming part of the algorithm, computing alpha values for components and intervals:
+Component(x=5, i=1, vertices={'0'}, alpha=None)
+Interval ('5', '0') not found
+Computed Component,('5', 1) Alpha: Component(x=5, i=1, vertices={'0'}, alpha=1)
+Component(x=2, i=1, vertices={'0'}, alpha=None)
+Interval ('2', '0') not found
+Computed Component,('2', 1) Alpha: Component(x=2, i=1, vertices={'0'}, alpha=1)
+Component(x=3, i=1, vertices={'2'}, alpha=None)
+Interval ('3', '2') not found
+Computed Component,('3', 1) Alpha: Component(x=3, i=1, vertices={'2'}, alpha=1)
+Component(x=3, i=2, vertices={'0'}, alpha=None)
+Interval ('3', '0') not found
+Computed Component,('3', 2) Alpha: Component(x=3, i=2, vertices={'0'}, alpha=1)
+Component(x=4, i=0, vertices={'5'}, alpha=None)
+Interval ('4', '5') not found
+Computed Component,('4', 0) Alpha: Component(x=4, i=0, vertices={'5'}, alpha=1)
+Component(x=4, i=2, vertices={'0'}, alpha=None)
+Interval ('4', '0') not found
+Computed Component,('4', 2) Alpha: Component(x=4, i=2, vertices={'0'}, alpha=1)
+Component(x=3, i=0, vertices={'5', '7'}, alpha=None)
+Interval ('3', '5') not found
+Interval ('3', '7') not found
+Computed Component,('3', 0) Alpha: Component(x=3, i=0, vertices={'5', '7'}, alpha=1)
+Component(x=4, i=1, vertices={'6', '2'}, alpha=None)
+Interval ('4', '6') not found
+Interval ('4', '2') not found
+Computed Component,('4', 1) Alpha: Component(x=4, i=1, vertices={'6', '2'}, alpha=1)
+Component(x=1, i=0, vertices={'6', '7'}, alpha=None)
+Interval ('1', '6') not found
+Interval ('1', '7') not found
+Computed Component,('1', 0) Alpha: Component(x=1, i=0, vertices={'6', '7'}, alpha=1)
+Component(x=5, i=0, vertices={'6', '2', '4', '3'}, alpha=None)
+Interval(x=5, y=6, vertices={'4'}, alpha=None)
+Interval ('5', '4') not found
+Interval ('4', '6') not found
+interval alpha: 1
+Computed Interval(('5', '6')) alpha:Interval(x=5, y=6, vertices={'4'}, alpha=1)
+Interval(x=5, y=2, vertices={'4', '3'}, alpha=None)
+Interval ('5', '4') not found
+Interval ('4', '2') not found
+Interval ('5', '3') not found
+Interval ('3', '2') not found
+interval alpha: 1
+Computed Interval(('5', '2')) alpha:Interval(x=5, y=2, vertices={'4', '3'}, alpha=1)
+Interval ('5', '4') not found
+Component(x=4, i=1, vertices={'6', '2'}, alpha=1)
+Interval ('5', '3') not found
+Component(x=3, i=1, vertices={'2'}, alpha=1)
+Computed Component,('5', 0) Alpha: Component(x=5, i=0, vertices={'6', '2', '4', '3'}, alpha=2)
+Component(x=7, i=0, vertices={'1', '2', '0', '3'}, alpha=None)
+Interval ('7', '1') not found
+Interval(x=7, y=2, vertices={'3'}, alpha=None)
+Interval ('7', '3') not found
+Interval ('3', '2') not found
+interval alpha: 1
+Computed Interval(('7', '2')) alpha:Interval(x=7, y=2, vertices={'3'}, alpha=1)
+Component(x=2, i=1, vertices={'0'}, alpha=1)
+Interval(x=7, y=0, vertices={'2', '3'}, alpha=None)
+Interval(x=7, y=2, vertices={'3'}, alpha=1)
+Interval (('7', '2')) is already computed with alpha: 1
+Interval ('2', '0') not found
+Interval ('7', '3') not found
+Interval ('3', '0') not found
+Component(x=3, i=1, vertices={'2'}, alpha=1)
+interval alpha: 2
+Computed Interval(('7', '0')) alpha:Interval(x=7, y=0, vertices={'2', '3'}, alpha=2)
+Interval ('7', '3') not found
+Component(x=3, i=1, vertices={'2'}, alpha=1)
+Component(x=3, i=2, vertices={'0'}, alpha=1)
+Computed Component,('7', 0) Alpha: Component(x=7, i=0, vertices={'1', '2', '0', '3'}, alpha=3)
+Component(x=2, i=0, vertices={'5', '4', '7', '3'}, alpha=None)
+Interval(x=2, y=5, vertices={'4', '3'}, alpha=None)
+Interval ('2', '4') not found
+Interval ('4', '5') not found
+Interval ('2', '3') not found
+Interval ('3', '5') not found
+interval alpha: 1
+Computed Interval(('2', '5')) alpha:Interval(x=2, y=5, vertices={'4', '3'}, alpha=1)
+Interval ('2', '4') not found
+Component(x=4, i=0, vertices={'5'}, alpha=1)
+Interval(x=2, y=7, vertices={'3'}, alpha=None)
+Interval ('2', '3') not found
+Interval ('3', '7') not found
+interval alpha: 1
+Computed Interval(('2', '7')) alpha:Interval(x=2, y=7, vertices={'3'}, alpha=1)
+Interval ('2', '3') not found
+Component(x=3, i=0, vertices={'5', '7'}, alpha=1)
+Computed Component,('2', 0) Alpha: Component(x=2, i=0, vertices={'5', '4', '7', '3'}, alpha=2)
+Component(x=6, i=0, vertices={'5', '4', '0', '1'}, alpha=None)
+Interval(x=6, y=5, vertices={'4'}, alpha=None)
+Interval ('6', '4') not found
+Interval ('4', '5') not found
+interval alpha: 1
+Computed Interval(('6', '5')) alpha:Interval(x=6, y=5, vertices={'4'}, alpha=1)
+Component(x=5, i=1, vertices={'0'}, alpha=1)
+Interval ('6', '4') not found
+Component(x=4, i=0, vertices={'5'}, alpha=1)
+Component(x=4, i=2, vertices={'0'}, alpha=1)
+Interval(x=6, y=0, vertices={'5', '4'}, alpha=None)
+Interval(x=6, y=5, vertices={'4'}, alpha=1)
+Interval (('6', '5')) is already computed with alpha: 1
+Interval ('5', '0') not found
+Interval ('6', '4') not found
+Interval ('4', '0') not found
+Component(x=4, i=0, vertices={'5'}, alpha=1)
+interval alpha: 2
+Computed Interval(('6', '0')) alpha:Interval(x=6, y=0, vertices={'5', '4'}, alpha=2)
+Interval ('6', '1') not found
+Computed Component,('6', 0) Alpha: Component(x=6, i=0, vertices={'5', '4', '0', '1'}, alpha=3)
+Component(x=0, i=0, vertices={'5', '7', '2', '3', '6', '4'}, alpha=None)
+Interval ('0', '5') not found
+Component(x=5, i=0, vertices={'6', '2', '4', '3'}, alpha=2)
+Interval(x=0, y=7, vertices={'2', '3'}, alpha=None)
+Interval ('0', '2') not found
+Interval(x=2, y=7, vertices={'3'}, alpha=1)
+Interval (('2', '7')) is already computed with alpha: 1
+Interval ('0', '3') not found
+Interval ('3', '7') not found
+Component(x=3, i=1, vertices={'2'}, alpha=1)
+interval alpha: 2
+Computed Interval(('0', '7')) alpha:Interval(x=0, y=7, vertices={'2', '3'}, alpha=2)
+Interval ('0', '2') not found
+Component(x=2, i=0, vertices={'5', '4', '7', '3'}, alpha=2)
+Interval ('0', '3') not found
+Component(x=3, i=0, vertices={'5', '7'}, alpha=1)
+Component(x=3, i=1, vertices={'2'}, alpha=1)
+Interval(x=0, y=6, vertices={'5', '4'}, alpha=None)
+Interval ('0', '5') not found
+Interval(x=5, y=6, vertices={'4'}, alpha=1)
+Interval (('5', '6')) is already computed with alpha: 1
+Interval ('0', '4') not found
+Interval ('4', '6') not found
+Component(x=4, i=0, vertices={'5'}, alpha=1)
+interval alpha: 2
+Computed Interval(('0', '6')) alpha:Interval(x=0, y=6, vertices={'5', '4'}, alpha=2)
+Interval ('0', '4') not found
+Component(x=4, i=0, vertices={'5'}, alpha=1)
+Component(x=4, i=1, vertices={'6', '2'}, alpha=1)
+Computed Component,('0', 0) Alpha: Component(x=0, i=0, vertices={'5', '7', '2', '3', '6', '4'}, alpha=3)
+
+
+
+
+Component(x=5, i=0, vertices={'6', '2', '4', '3'}, alpha=2)
+Component(x=5, i=1, vertices={'0'}, alpha=1)
+Component(x=7, i=0, vertices={'1', '2', '0', '3'}, alpha=3)
+Component(x=2, i=0, vertices={'5', '4', '7', '3'}, alpha=2)
+Component(x=2, i=1, vertices={'0'}, alpha=1)
+Component(x=3, i=0, vertices={'5', '7'}, alpha=1)
+Component(x=3, i=1, vertices={'2'}, alpha=1)
+Component(x=3, i=2, vertices={'0'}, alpha=1)
+Component(x=6, i=0, vertices={'5', '4', '0', '1'}, alpha=3)
+Component(x=4, i=0, vertices={'5'}, alpha=1)
+Component(x=4, i=1, vertices={'6', '2'}, alpha=1)
+Component(x=4, i=2, vertices={'0'}, alpha=1)
+Component(x=0, i=0, vertices={'5', '7', '2', '3', '6', '4'}, alpha=3)
+Component(x=1, i=0, vertices={'6', '7'}, alpha=1)
+max_alpha_component: 5
+max independent set: {'5', '2', '0', '3'}
+Graph intependent set number: 4
+Brute force: 4
+

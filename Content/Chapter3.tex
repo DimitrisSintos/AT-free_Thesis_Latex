@@ -223,5 +223,42 @@ caption={interval.py}
 
 \subsection{Παραδείγματα Εκτέλεσης του Προγράμματος}
 
+Ως παράδειγμα δείχνουμε πως εκτελούμε τον αλγόριθμο υπολογισμού του μέγιστου ανεξάρτητου συνόλου στο ίδιο γράφημα με την Ενότητα \ref{sec:Independent_Set_Alg}. 
+ 
+%---------------FILE---------------------------------
+\lstinputlisting[
+language=Json,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={Το γράφημα σε μορφή JSOn}
+]{Content/CodeDirectory/input-graph.json}
+%---------------FILE END---------------------------------
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{pictures/at-free-graph-pyvis.png} 
+	\caption{To γράφημα εισόδου του Αλγορίθμου σχεδιασμένο από την βιβλιοθήκη PyVis}
+	\label{fig:at-free-graph-pyvis}
+\end{figure}
+
+\lstinputlisting[
+language=text, % or specify another language that suits your needs
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={Η εκτέλεση του Αλγορίθμου}
+]{Content/CodeDirectory/ind-output.txt}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{pictures/at-free-graph-ind-output-pyvis.png} 
+	\caption{To γράφημα εξόδου του Αλγορίθμου σχεδιασμένο από την βιβλιοθήκη PyVis}
+	\label{fig:at-free-graph-ind-output-pyvis}
+\end{figure}
 
 
