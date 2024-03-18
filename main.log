@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.2.7)  5 MAR 2024 22:03
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.14)  18 MAR 2024 22:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1397,7 +1397,7 @@ File: pictures/at-free-graph.png Graphic file (type bmp)
 [8] [9] [10] [11]
 File: pictures/at-free-graph.intependent-set.png Graphic file (type bmp)
 <pictures/at-free-graph.intependent-set.png>
-) [12] [13]
+ [12]) [13]
 \openout2 = `Content/Chapter3.aux'.
 
  (./Content/Chapter3.tex
@@ -1609,8 +1609,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  32831 strings out of 476191
- 652283 string characters out of 5812073
- 1446661 words of memory out of 5000000
+ 652283 string characters out of 5812072
+ 1446691 words of memory out of 5000000
  52686 multiletter control sequences out of 15000+600000
  475138 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
