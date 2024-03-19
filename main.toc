@@ -8,14 +8,14 @@
 \contentsline {chapter}{\numberline {2}Οι Αλγόριθμοι}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Υπολογισμός Μέγιστου Ανεξάρτητου Συνόλου}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Υπολογισμός Ελάχιστου Κυρίαρχου Συνόλου}{13}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Το Πρόβλημα του 3-Χρωματισμού}{13}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Η Υλοποίηση}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Οργάνωση Κώδικα}{14}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Είσοδος - Έξοδος}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Δομές Δεδομένων}{18}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Υπολογισμός Μέγιστου Ανεξάρτητου Συνόλου}{20}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}H Kλάση PolynomialTimeAlgorithm}{20}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}H Kλάση Graph}{27}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Κλάσεις Component και Interval}{31}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Παραδείγματα Εκτέλεσης του Προγράμματος}{32}{subsection.3.4.4}%
-\contentsline {starchapter}{Βιβλιογραφία}{39}{section*.15}%
+\contentsline {section}{\numberline {2.3}Το Πρόβλημα του 3-Χρωματισμού}{16}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Η Υλοποίηση}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Οργάνωση Κώδικα}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Είσοδος - Έξοδος}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Δομές Δεδομένων}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Υπολογισμός Μέγιστου Ανεξάρτητου Συνόλου}{23}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}H Kλάση PolynomialTimeAlgorithm}{23}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}H Kλάση Graph}{30}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Κλάσεις Component και Interval}{34}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Παραδείγματα Εκτέλεσης του Προγράμματος}{35}{subsection.3.4.4}%
+\contentsline {starchapter}{Βιβλιογραφία}{42}{section*.15}%
