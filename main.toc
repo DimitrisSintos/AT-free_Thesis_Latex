@@ -29,5 +29,5 @@
 \contentsline {subsection}{\numberline {3.6.4}H Kλάση ThreeColouring}{80}{subsection.3.6.4}%
 \contentsline {subsection}{\numberline {3.6.5}H Kλάση BlockCutpointTree}{86}{subsection.3.6.5}%
 \contentsline {subsection}{\numberline {3.6.6}Παραδείγματα Εκτέλεσης του Προγράμματος}{88}{subsection.3.6.6}%
-\contentsline {chapter}{\numberline {4}Επίλογος}{93}{chapter.4}%
-\contentsline {starchapter}{Βιβλιογραφία}{94}{section*.36}%
+\contentsline {chapter}{\numberline {4}Επίλογος}{94}{chapter.4}%
+\contentsline {starchapter}{Βιβλιογραφία}{95}{section*.36}%

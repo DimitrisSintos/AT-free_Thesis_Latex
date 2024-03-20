@@ -232,7 +232,7 @@ basicstyle=\footnotesize\ttfamily,
 columns=fullflexible,
 breakatwhitespace=false,
 captionpos=t,
-caption={Το γράφημα σε μορφή JSOn}
+caption={Το γράφημα σε μορφή JSOΝ}
 ]{Content/CodeDirectory/input-graph.json}
 %---------------FILE END---------------------------------
 
@@ -426,6 +426,7 @@ caption={graph.py}
 
 \subsection{H Kλάση Block}
 
+Η κλάση Block αναπαριστά τα μπλοκς του αλγορίθμου. Περιλαμβάνει μεθόδους για την εύρεση ελάχιστων σταθερών διαχωριστών και τον έλεγχο της συνδεσιμότητας
 
 %---------------FILE---------------------------------
 
@@ -436,7 +437,7 @@ basicstyle=\footnotesize\ttfamily,
 columns=fullflexible,
 breakatwhitespace=false,
 captionpos=t,
-caption={graph.py}
+caption={block.py}
 ]{Content/CodeDirectory/block.py}
 %---------------FILE END---------------------------------
 
@@ -459,6 +460,8 @@ caption={graph.py}
 \end{enumerate}
 
 \subsection{H Kλάση ThreeColouring}
+
+Η κλάση ThreeColouring χρωματίζει με τρία χρώματα το συμπτυγμένο γράφημα που προκύπτει στην γραμμή 13 του αλγορίθμου \ref{alg:coloring}.
 
 
 %---------------FILE---------------------------------
@@ -519,7 +522,7 @@ caption={block\_cutpoint\_tree.py}
 Εξηγούμε τις συναρτήσεις της κλάσης:
 
 \begin{enumerate}
-	\item \texttt{\_\_init\_\_}: Ο κατασκευαστής της κλάσης που αρχικοποιεί τις μεταβλητές blocks, cutpoints, root και tree της κλάσης.
+	\item \texttt{\_\_init\_\_}: Ο κατασκευαστής της κλάσης που αρχικοποιεί τις μεταβλητές blocks, cutpoints, root, tree και visited.
 	
 	\item \texttt{create\_tree}: Δημιουργεί το δέντρο απόφασης (Block-Cutpoint Tree) βασισμένο στα μπλοκ και τα cutpoints. Δημιουργεί έναν κόμβο για κάθε μπλοκ και συνδέει με ακμές τους κόμβους που αντιστοιχούν σε μπλοκ που περιέχουν το ίδιο cutpoint.
 	
@@ -531,7 +534,7 @@ caption={block\_cutpoint\_tree.py}
 
 \subsection{Παραδείγματα Εκτέλεσης του Προγράμματος}
 
-Ως παράδειγμα δείχνουμε πως εκτελούμε τον αλγόριθμο υπολογισμού του μέγιστου ανεξάρτητου συνόλου στο ίδιο γράφημα με την Ενότητα \ref{sec:3-Coloring_Alg}. 
+Ως παράδειγμα δείχνουμε πως εκτελούμε τον αλγόριθμο 3-χρωματισμού στο ίδιο γράφημα με την Ενότητα \ref{sec:3-Coloring_Alg}. 
 
 %---------------FILE---------------------------------
 \lstinputlisting[
