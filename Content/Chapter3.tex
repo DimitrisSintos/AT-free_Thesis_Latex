@@ -118,16 +118,15 @@ caption={graph\_parser.py}
 	\item σύνολο: Για τον χρωματισμό του γραφήματος χρειάστηκε να αποθηκεύσουμε σε ένα σύνολο τα $cutpoints$ του.
 \end{enumerate}
 
-\section{Υπολογισμός Μέγιστου Ανεξάρτητου Συνόλου}
-\label{sec:Impl-Independent-set}
+\section{Υπολογισμός Ελάχιστου Κυρίαρχου Συνόλου}
+\label{sec:Impl-Domination-set}
 %ο Αλγόριθμος "Biconnectivity" του Robert Tarjan \cite{tarjan-depth-first-search}
 
-Στο παρόν κεφάλαιο, παρουσιάζουμε ενδεικτικές κλάσεις που αποτελούν το αλγοριθμικό τμήμα για τον υπολογισμό του μέγιστου ανεξάρτητου συνόλου. Προχωρούμε στην παρουσίαση αυτών των κλάσεων με τη σειρά που καλούνται στο πλαίσιο του συνολικού αλγοριθμικού σχεδιασμού. Σημειώνουμε πως παραλείπουμε τις κλάσεις που υλοποιούν αλγορίθμους από άλλες εργασίες, όπως ο αλγόριθμος του Bucket sort.
+Στο παρόν κεφάλαιο, παρουσιάζουμε ενδεικτικές κλάσεις που αποτελούν το αλγοριθμικό τμήμα για τον υπολογισμό του Ελάχιστου Κυρίαρχου Συνόλου. Προχωρούμε στην παρουσίαση αυτών των κλάσεων με τη σειρά που καλούνται στο πλαίσιο του συνολικού αλγοριθμικού σχεδιασμού. Σημειώνουμε πως παραλείπουμε τις κλάσεις που υλοποιούν αλγορίθμους από άλλες εργασίες, όπως ο αλγόριθμος του Bucket sort.
 
 
 
 \subsection{H Kλάση PolynomialTimeAlgorithm}
-\label{subsec:PolynomialTimeAlgorithm-IndependentSet}
 Η κλάση \myTTT{PolynomialTimeAlgorithm} αποτελεί την κύρια κλάση για τον υπολογισμό του μέγιστου ανεξάρτητου συνόλου.
 
 
@@ -227,7 +226,7 @@ caption={interval.py}
  
 %---------------FILE---------------------------------
 \lstinputlisting[
-language=Json,
+language=json,
 breaklines=true,
 basicstyle=\footnotesize\ttfamily,
 columns=fullflexible,
@@ -260,5 +259,130 @@ caption={Η εκτέλεση του Αλγορίθμου}
 	\caption{To γράφημα εξόδου του Αλγορίθμου σχεδιασμένο από την βιβλιοθήκη PyVis}
 	\label{fig:at-free-graph-ind-output-pyvis}
 \end{figure}
+
+
+\section{Υπολογισμός Μέγιστου Ανεξάρτητου Συνόλου}
+\label{sec:Impl-Independent-set}
+
+
+Σε αυτό το κεφάλαιο, παρουσιάζουμε συνοπτικά τις κλάσεις που αποτελούν το αλγοριθμικό τμήμα για τον υπολογισμό του μέγιστου ανεξάρτητου συνόλου. Προχωρούμε στην παρουσίαση αυτών των κλάσεων με τη σειρά που χρησιμοποιούνται στο πλαίσιο του συνολικού αλγοριθμικού σχεδιασμού. Επισημαίνουμε ότι αγνοούμε τις κλάσεις που υλοποιούν αλγορίθμους από άλλες εργασίες, όπως ο υπολογισμός ενός ελάχιστου κυρίαρχου μονοπατιού \cite{corneil-olariu-stewart-asteroidal-triple-free-graphs}.
+
+
+
+\subsection{H Kλάση PolynomialTimeAlgorithm}
+
+
+%---------------FILE---------------------------------
+
+\lstinputlisting[
+language=Python,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={polynomial\_time\_algorithm.py}
+]{Content/CodeDirectory/polynomial_time_algorithm_domination_set.py}
+%---------------FILE END---------------------------------
+
+Εξηγούμε αναλυτικά τις συναρτήσεις της κλάσης:
+
+\begin{enumerate}
+	\item Κατασκευαστής (\_\_init\_\_): Δέχεται ένα αντικείμενο Graph και ένα ακέραιο weight, που υποδηλώνει το βάρος w αλγορίθμου mcdsw και αρχικοποιεί τα αντίστοιχα χαρακτηριστικά της κλάσης.
+	\item Η συνάρτηση \myTTT{mcdsw}: Υλοποιεί τον αλγόριθμο $mcds_{w}$ \ref{alg:domi-set}.
+	\item H συνάρτηση \myTTT{initialize\_queue}: Βοηθητική κλάση που αρχικοποιεί την ουρά $A_1$.
+	\item H συνάρτηση \myTTT{generate\_subsets}:  H συνάρτηση δημιουργήσει όλα τα υποσύνολα της κλειστής γειτονιάς ενός κόμβου σε μήκη από 1 έως το βάρος (weight) του έχουμε επιλέξει.
+\end{enumerate}
+
+\subsection{H Kλάση Graph}
+
+%---------------FILE---------------------------------
+\lstinputlisting[
+language=Python,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={graph.py}
+]{Content/CodeDirectory/graph_domination_set.py}
+%---------------FILE END---------------------------------
+
+Εξηγούμε αναλυτικά τις συναρτήσεις της κλάσης:
+
+\begin{enumerate}
+	
+	\item Μέθοδος \texttt{bfs\_levels}: Υλοποιεί τον αλγόριθμο BFS (Breadth-First Search) για τον υπολογισμό των επιπέδων του γράφου από μια δεδομένη κορυφή.
+	
+	\item Μέθοδος \texttt{closed\_neighborhood}: Επιστρέφει την κλειστή γειτονιά μιας κορυφής, δηλαδή την κορυφή και όλες τις γειτονικές της κορυφές.
+	
+	\item Μέθοδος \texttt{closed\_neighborhood\_of\_set}: Υπολογίζει την κλειστή γειτονιά ενός συνόλου κορυφών.
+	
+	\item Μέθοδος \texttt{show}: Χρησιμοποιεί το πακέτο \texttt{pyvis} για να εμφανίσει το γράφημα σε μορφή διαδραστικού δικτύου.
+	
+\end{enumerate}
+
+\subsection{Παραδείγματα Εκτέλεσης του Προγράμματος}
+
+Ως παράδειγμα δείχνουμε πως εκτελούμε τον αλγόριθμο υπολογισμού του ελάχιστου κυρίαρχου συνόλου στο ίδιο γράφημα με την Ενότητα \ref{sec:Domination_Set_Alg}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{pictures/at-free-graph-pyvis.png} 
+	\caption{To γράφημα εισόδου του Αλγορίθμου σχεδιασμένο από την βιβλιοθήκη PyVis}
+\end{figure}
+
+\lstinputlisting[
+language=text, % or specify another language that suits your needs
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={Η εκτέλεση του Αλγορίθμου}
+]{Content/CodeDirectory/domi-output.txt}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{pictures/at-free-graph-domi-output-pyvis.png} 
+	\caption{To γράφημα εξόδου του Αλγορίθμου σχεδιασμένο από την βιβλιοθήκη PyVis}
+\end{figure}
+
+\section{Το Πρόβλημα του 3-Χρωματισμού}
+
+Στο παρόν κεφάλαιο, παρουσιάζουμε ενδεικτικές κλάσεις που αποτελούν το αλγοριθμικό τμήμα για την επίλυση του προβλήματος 3-χρωματισμού. Προχωρούμε στην παρουσίαση αυτών των κλάσεων με τη σειρά που καλούνται στο πλαίσιο του συνολικού αλγοριθμικού σχεδιασμού. Σημειώνουμε πως παραλείπουμε τις κλάσεις που υλοποιούν αλγορίθμους από άλλες εργασίες, όπως ο Αλγόριθμος "Biconnectivity" του Robert Tarjan \cite{tarjan-depth-first-search}.
+
+\subsection{H Kλάση PolynomialTimeAlgorithm}
+
+
+%---------------FILE---------------------------------
+
+\lstinputlisting[
+language=Python,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={polynomial\_time\_algorithm.py}
+]{Content/CodeDirectory/polynomial_time_algorithm_3_colouring.py}
+%---------------FILE END---------------------------------
+
+Εξηγούμε τις συναρτήσεις της κλάσης:
+
+\begin{enumerate}
+	\item Κατασκευαστής (\_\_init\_\_): Δέχεται ένα αντικείμενο Graph και αρχικοποιεί μερικές μεταβλητές που θα χρειαστούν για την σωστή λειτουργία του αλγορίθμου.
+	
+	\item H συνάρτηση \myTTT{three\_colouring}: Είναι η κύρια συνάρτηση που εκτελεί τα βήματα του αλγορίθμου για την επίλυση του προβλήματος 3-Χρωματισμού.
+	
+	\item Η συνάρτηση \myTTT{line\_1\_check}: Υλοποιεί τον έλεγχο της πρώτης γραμμής του αλγορίθμου.: Ελέγχει αν υπάρχει κύκλος μεγέθους 4 ($K_4$) στο $G$.
+	
+	\item H συνάρτηση \myTTT{line\_3\_check}: Ελέγχει αν υπάρχει διαμάντι στον γράφημα.    
+	
+	\item H συνάρτηση \myTTT{line\_5\_check}:  Ελέγχει αν υπάρχει ελάχιστο σταθερό διαχωριστής στο γράφημα.
+	
+	\item H συνάρτηση \myTTT{perform\_contraction}:  Βοηθητική συνάρτηση που εκτελεί σύμπτυξη δύο κορυφών.
+\end{enumerate}
 
 
