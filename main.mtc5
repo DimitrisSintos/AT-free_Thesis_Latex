@@ -1,14 +1,19 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Οργάνωση Κώδικα}{\reset@font\mtcSfont 28}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Είσοδος - Έξοδος}{\reset@font\mtcSfont 29}{section.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Δομές Δεδομένων}{\reset@font\mtcSfont 32}{section.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Υπολογισμός Ελάχιστου Κυρίαρχου Συνόλου}{\reset@font\mtcSfont 34}{section.3.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}H Kλάση PolynomialTimeAlgorithm}{\reset@font\mtcSSfont 34}{subsection.3.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}H Kλάση Graph}{\reset@font\mtcSSfont 41}{subsection.3.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}Κλάσεις Component και Interval}{\reset@font\mtcSSfont 45}{subsection.3.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.4}Παραδείγματα Εκτέλεσης του Προγράμματος}{\reset@font\mtcSSfont 46}{subsection.3.4.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Υπολογισμός Μέγιστου Ανεξάρτητου Συνόλου}{\reset@font\mtcSfont 52}{section.3.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.1}H Kλάση PolynomialTimeAlgorithm}{\reset@font\mtcSSfont 53}{subsection.3.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.2}H Kλάση Graph}{\reset@font\mtcSSfont 56}{subsection.3.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.3}Παραδείγματα Εκτέλεσης του Προγράμματος}{\reset@font\mtcSSfont 58}{subsection.3.5.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.6}Το Πρόβλημα του 3-Χρωματισμού}{\reset@font\mtcSfont 67}{section.3.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.1}H Kλάση PolynomialTimeAlgorithm}{\reset@font\mtcSSfont 67}{subsection.3.6.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Οργάνωση Κώδικα}{\reset@font\mtcSfont 30}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Είσοδος - Έξοδος}{\reset@font\mtcSfont 31}{section.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Δομές Δεδομένων}{\reset@font\mtcSfont 34}{section.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Υπολογισμός Ελάχιστου Κυρίαρχου Συνόλου}{\reset@font\mtcSfont 36}{section.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}H Kλάση PolynomialTimeAlgorithm}{\reset@font\mtcSSfont 36}{subsection.3.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}H Kλάση Graph}{\reset@font\mtcSSfont 43}{subsection.3.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}Κλάσεις Component και Interval}{\reset@font\mtcSSfont 47}{subsection.3.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.4}Παραδείγματα Εκτέλεσης του Προγράμματος}{\reset@font\mtcSSfont 48}{subsection.3.4.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Υπολογισμός Μέγιστου Ανεξάρτητου Συνόλου}{\reset@font\mtcSfont 54}{section.3.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.1}H Kλάση PolynomialTimeAlgorithm}{\reset@font\mtcSSfont 55}{subsection.3.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.2}H Kλάση Graph}{\reset@font\mtcSSfont 58}{subsection.3.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.3}Παραδείγματα Εκτέλεσης του Προγράμματος}{\reset@font\mtcSSfont 60}{subsection.3.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.6}Το Πρόβλημα του 3-Χρωματισμού}{\reset@font\mtcSfont 69}{section.3.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.1}H Kλάση PolynomialTimeAlgorithm}{\reset@font\mtcSSfont 69}{subsection.3.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.2}H Kλάση Graph}{\reset@font\mtcSSfont 72}{subsection.3.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.3}H Kλάση Block}{\reset@font\mtcSSfont 77}{subsection.3.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.4}H Kλάση ThreeColouring}{\reset@font\mtcSSfont 80}{subsection.3.6.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.5}H Kλάση BlockCutpointTree}{\reset@font\mtcSSfont 86}{subsection.3.6.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.6.6}Παραδείγματα Εκτέλεσης του Προγράμματος}{\reset@font\mtcSSfont 88}{subsection.3.6.6}}

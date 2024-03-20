@@ -378,11 +378,221 @@ caption={polynomial\_time\_algorithm.py}
 	
 	\item Η συνάρτηση \myTTT{line\_1\_check}: Υλοποιεί τον έλεγχο της πρώτης γραμμής του αλγορίθμου.: Ελέγχει αν υπάρχει κύκλος μεγέθους 4 ($K_4$) στο $G$.
 	
-	\item H συνάρτηση \myTTT{line\_3\_check}: Ελέγχει αν υπάρχει διαμάντι στον γράφημα.    
+	\item H συνάρτηση \myTTT{line\_5\_check}: Ελέγχει αν υπάρχει διαμάντι στον γράφημα.    
 	
-	\item H συνάρτηση \myTTT{line\_5\_check}:  Ελέγχει αν υπάρχει ελάχιστο σταθερό διαχωριστής στο γράφημα.
+	\item H συνάρτηση \myTTT{line\_9\_check}:  Ελέγχει αν υπάρχει ελάχιστο σταθερό διαχωριστής στο γράφημα.
 	
 	\item H συνάρτηση \myTTT{perform\_contraction}:  Βοηθητική συνάρτηση που εκτελεί σύμπτυξη δύο κορυφών.
 \end{enumerate}
 
+\subsection{H Kλάση Graph}
 
+
+%---------------FILE---------------------------------
+
+\lstinputlisting[
+language=Python,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={graph.py}
+]{Content/CodeDirectory/graph_3_colouring.py}
+%---------------FILE END---------------------------------
+
+Εξηγούμε τις συναρτήσεις της κλάσης:
+
+\begin{enumerate}
+	\item \texttt{is\_triangle}: Ελέγχει εάν το γράφημα είναι τρίγωνο, δηλαδή αν έχει 3 κορυφές ή 3 ακμές.
+	
+	\item \texttt{find\_K4}: Ελέγχει εάν το γράφημα περιέχει ένα $K_4$.
+	
+	\item \texttt{find\_triangle\_in\_neighborhood}: Ελέγχει εάν η γειτονιά μιας συγκεκριμένης κορυφής περιέχει τρίγωνο. Αυτή η συνάρτηση καλείται για τον έλεγχο της γραμμής 1 του αλγορίθμου μετά από αναδρομή. 
+	
+	\item \texttt{find\_diamond}: Η συνάρτηση ψάχνει να βρει άμα υπάρχει διαμάντι στο γράφημα, βρίσκοντας δύο κορυφές που έχουν τουλάχιστον δύο κοινούς γείτονες.
+	
+	\item \texttt{contract}: Συμπτύσσει ένα σύνολο κορυφών σε μια μοναδική κορυφή.
+	
+	\item \texttt{delete\_vertices}: Διαγράφει ένα σύνολο κορυφών από το γρφημα.
+	
+	\item \texttt{edge\_exists}: Ελέγχει εάν μια ακμή υπάρχει στο γράφημα.
+	
+	\item \texttt{copy}: Δημιουργεί αντίγραφο του γράφου.
+	
+	\item \texttt{show}: Εμφανίζει το γράφημα χρησιμοποιώντας τη βιβλιοθήκη pyvis σε μορφή διαδραστικού δικτύου.
+\end{enumerate}
+
+
+\subsection{H Kλάση Block}
+
+
+%---------------FILE---------------------------------
+
+\lstinputlisting[
+language=Python,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={graph.py}
+]{Content/CodeDirectory/block.py}
+%---------------FILE END---------------------------------
+
+Εξηγούμε τις συναρτήσεις της κλάσης:
+
+\begin{enumerate}
+	\item \texttt{find\_minimal\_stable\_separator}: Αναζητά τον ελάχιστο σταθερό διαχωριστικό σε έναν κόμβο $x$.
+	
+	\item \texttt{find\_stable\_cutset}: Ελέγχει εάν μια συγκεκριμένη γειτονιά του κόμβου $x$ είναι ένα σταθερό διαχωριστικό.
+	
+	\item \texttt{reduce\_cutset\_to\_minimal\_stable\_separator}: Μειώνει ένα διαχωριστικό σύνολο σε ένα ελάχιστο σταθερό διαχωριστικό.
+	
+	\item \texttt{delete\_vertices}: Διαγράφει ένα σύνολο κορυφών από το μπλοκ.
+	
+	\item \texttt{is\_connected}: Ελέγχει εάν το μπλοκ είναι συνδεδεμένο.
+	
+	\item \texttt{dfs}: Υλοποιεί τον αλγόριθμο του "Depth-first search" για να ελέγξει τη συνδεσιμότητα του μπλοκ.
+	
+	\item \texttt{copy}: Δημιουργεί αντίγραφο του μπλοκ.
+\end{enumerate}
+
+\subsection{H Kλάση ThreeColouring}
+
+
+%---------------FILE---------------------------------
+
+\lstinputlisting[
+language=Python,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={three\_colouring.py}
+]{Content/CodeDirectory/colouring.py}
+%---------------FILE END---------------------------------
+
+Εξηγούμε τις συναρτήσεις της κλάσης:
+
+
+\begin{enumerate}
+	\item \texttt{construct\_three\_colouring}: Είναι η βασική συνάρτηση χρωματισμού του γραφήματος. Αρχικά ελέγχει πόσα μπλοκς υπάρχουν στο γράφημα. Αν είναι περισσότερα από ένα υπολογίζει ένα δέντρο για με τα μπλοκς χρησιμοποιώντας τα cutpoints του γραφήματος.
+	
+	\item \texttt{colour\_triangle}: Χρωματίζει ένα τρίγωνο με τρία διαφορετικά χρώματα.
+	
+	\item \texttt{colour\_triangular\_strip}: Χρωματίζει μια τριγωνική λωρίδα με τρία χρώματα.
+	
+	\item \texttt{find\_init\_triangle\_in\_strip}: Εντοπίζει το αρχικό τρίγωνο σε μια τριγωνική λωρίδα.
+	
+	\item \texttt{find\_triangle\_in\_strip}: Βρίσκει ένα τρίγωνο σε μια τριγωνική λωρίδα, ξεκινώντας από μια δεδομένη κορυφή.
+	
+	\item \texttt{colour\_triangle\_of\_triangular\_strip}: Χρωματίζει ένα τρίγωνο μιας τριγωνικής λωρίδας.
+	
+	\item \texttt{colour\_prism}: Χρωματίζει ένα πρίσμα, δηλαδή μια τριγωνικό λωρίδα τάξης 2.
+	
+	\item \texttt{find\_triangles\_in\_prism}: Εντοπίζει τα δύο τρίγωνα σε ένα πρίσμα.
+	
+	\item \texttt{colour\_remaining\_vertices}: Χρωματίζει τις κορυφές του γραφήματος που δεν ανήκουν σε κάποιο μπλοκ, χρησιμοποιώντας τρία χρώματα και αποφεύγοντας τις συγκρούσεις χρωμάτων.
+	
+	\item \texttt{colour\_initial\_graph}: Χρωματίζει το αρχικό γράφημα από το συμπαγές. 
+		
+\end{enumerate}
+
+\subsection{H Kλάση BlockCutpointTree}
+
+
+%---------------FILE---------------------------------
+
+\lstinputlisting[
+language=Python,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={block\_cutpoint\_tree.py}
+]{Content/CodeDirectory/tree.py}
+%---------------FILE END---------------------------------
+
+Εξηγούμε τις συναρτήσεις της κλάσης:
+
+\begin{enumerate}
+	\item \texttt{\_\_init\_\_}: Ο κατασκευαστής της κλάσης που αρχικοποιεί τις μεταβλητές blocks, cutpoints, root και tree της κλάσης.
+	
+	\item \texttt{create\_tree}: Δημιουργεί το δέντρο απόφασης (Block-Cutpoint Tree) βασισμένο στα μπλοκ και τα cutpoints. Δημιουργεί έναν κόμβο για κάθε μπλοκ και συνδέει με ακμές τους κόμβους που αντιστοιχούν σε μπλοκ που περιέχουν το ίδιο cutpoint.
+	
+	\item \texttt{get\_next\_block}: Επιστρέφει τον επόμενο μη επισκεπτημένο κόμβο του δέντρου Block-Cutpoint Tree. Χρησιμοποιείται για τον εντοπισμό επόμενου μπλοκ που πρέπει να εξεταστεί.
+	
+	\item \texttt{show}: Εμφανίζει γραφικά το δέντρο Block-Cutpoint Tree.
+\end{enumerate}
+
+
+\subsection{Παραδείγματα Εκτέλεσης του Προγράμματος}
+
+Ως παράδειγμα δείχνουμε πως εκτελούμε τον αλγόριθμο υπολογισμού του μέγιστου ανεξάρτητου συνόλου στο ίδιο γράφημα με την Ενότητα \ref{sec:3-Coloring_Alg}. 
+
+%---------------FILE---------------------------------
+\lstinputlisting[
+language=json,
+breaklines=true,
+basicstyle=\footnotesize\ttfamily,
+columns=fullflexible,
+breakatwhitespace=false,
+captionpos=t,
+caption={Το γράφημα σε μορφή JSOn}
+]{Content/CodeDirectory/input-graph-colouring.json}
+%---------------FILE END---------------------------------
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/coloring-1.png} 
+	\caption{To γράφημα εισόδου του Αλγορίθμου σχεδιασμένο από την βιβλιοθήκη PyVis}
+	\label{fig:at-free-graph-pyvis-3-colouring}
+\end{figure}
+
+Παρακάτω δείχνουμε όλα τα στιγμιότυπα του γραφήματος κατά την διάρκεια εκτέλεσης του αλγορίθμου.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/coloring-2.png} 
+	\caption{To γράφημα μετά την σύμπτυξη των κορυφών 10,5}
+	\label{fig:at-free-graph-pyvis-3-colouring-2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/coloring-3.png} 
+	\caption{To γράφημα μετά την σύμπτυξη των κορυφών 8,11}
+	\label{fig:at-free-graph-pyvis-3-colouring-3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/coloring-4.png} 
+	\caption{To γράφημα μετά την σύμπτυξη των κορυφών 7,6}
+	\label{fig:at-free-graph-pyvis-3-colouring-4}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\textwidth]{pictures/coloring-block-cutpoint.png} 
+	\caption{ Block Cutpoint Tree \{ 0: \{8+11,6+7,10+5\}, 1: \{1,10+5,2,3,4,0\}, 2: \{9\}\}}
+	\label{fig:at-free-graph-pyvis-3-colouring-block-cutpoint}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/coloring-before-expansion.png} 
+	\caption{To "συμπτυγμένο" γράφημα μετά τον 3-χρωματισμό}
+	\label{fig:at-free-graph-pyvis-3-colouring-before-expansion}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/coloring-final.png} 
+	\caption{To γράφημα μετά το τέλος του αλγορίθμου}
+	\label{fig:at-free-graph-pyvis-3-colouring-final}
+\end{figure}

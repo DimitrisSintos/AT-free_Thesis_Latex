@@ -18,13 +18,13 @@ class PolynomialTimeAlgorithm:
                 print("Line 1 check failed. There is a K4 in the graph so it is not 3-colourable.")
                 return False
 
-            line_3_condition, vertices_to_contract = self.line_3_check()
-            if line_3_condition:
+            line_9_condition, vertices_to_contract = self.line_9_check()
+            if line_9_condition:
                 self.perform_contraction(vertices_to_contract)
                 return self.three_colouring()
 
-            line_5_condition,minimal_stable_separator = self.line_5_check()
-            if line_5_condition:
+            line_9_condition,minimal_stable_separator = self.line_9_check()
+            if line_9_condition:
                 self.perform_contraction(minimal_stable_separator)
                 return self.three_colouring()
 
@@ -41,7 +41,7 @@ class PolynomialTimeAlgorithm:
         else:
             return self.graph.find_K4()
 
-    def line_3_check(self):
+    def line_9_check(self):
         result = self.graph.find_diamond()
         if result is None:
             return False , None
@@ -49,7 +49,7 @@ class PolynomialTimeAlgorithm:
             return True , result
 
 
-    def line_5_check(self):
+    def line_9_check(self):
         """
         this should run in O(n*m) time
         if G contains a minimal stable separator S with |S| ≥ 2 then

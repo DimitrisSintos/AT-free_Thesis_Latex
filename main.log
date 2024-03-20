@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.14)  20 MAR 2024 15:17
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.14)  20 MAR 2024 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1119,8 +1119,10 @@ Package: ragged2e 2021/12/15 v3.1 ragged2e Package
 \RaggedLeftParindent=\skip97
 \RaggedRightParindent=\skip98
 \JustifyingParindent=\skip99
-)
-No file main.aux.
+) (./main.aux
+(./FrontMatter/Acknowledgements.aux) (./FrontMatter/Abstract.aux)
+(./FrontMatter/BilingualAbstract.aux) (./Content/Chapter1.aux)
+(./Content/Chapter2.aux) (./Content/Chapter3.aux) (./Content/Chapter4.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -1134,6 +1136,7 @@ LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
 5.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1280,12 +1283,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 35.
 LaTeX Info: Redefining \pageref on input line 35.
 LaTeX Info: Redefining \nameref on input line 35.
+
+(./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 \c@lstlisting=\count386
 File: FrontMatter/dimsintosOuter.pdf Graphic file (type pdf)
@@ -1302,64 +1303,80 @@ File: FrontMatter/dimsintosOuter.pdf Graphic file (type pdf)
 <use FrontMatter/dimsintosOuter.pdf, page 1>
 File: FrontMatter/dimsintosOuter.pdf Graphic file (type pdf)
 <use FrontMatter/dimsintosOuter.pdf, page 1>
-[1
+ [1
 
 ]
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 46.
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc1.
+\openout4 = `main.mtc1'.
 
-Package minitoc Warning: W0010
-(minitoc)                No file main.toc. 
-(minitoc)                MINITOCS NOT PREPARED on input line 46.
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc2.
+\openout4 = `main.mtc2'.
 
-[2]
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc3.
+\openout4 = `main.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc4.
+\openout4 = `main.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc5.
+\openout4 = `main.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc6.
+\openout4 = `main.mtc6'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing main.mtc7.
+\openout4 = `main.mtc7'.
+
+ [2]
 \openout2 = `FrontMatter/Acknowledgements.aux'.
 
  (./FrontMatter/Acknowledgements.tex) [3
 
 
 ]
+(./main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 4.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [1
+
+
+
+])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [1
-
-
-
-]
+ [2]
 \openout2 = `FrontMatter/Abstract.aux'.
 
- (./FrontMatter/Abstract.tex
 
-LaTeX Warning: Citation `at-free-independent-sets' on page ii undefined on inpu
-t line 11.
-
-
-LaTeX Warning: Citation `at-free-domination' on page ii undefined on input line
- 11.
-
-
-LaTeX Warning: Citation `at-free-3-colouring' on page ii undefined on input lin
-e 11.
-
-) [2
+(./FrontMatter/Abstract.tex) [3
 
 
 ]
 \openout2 = `FrontMatter/BilingualAbstract.aux'.
 
- (./FrontMatter/BilingualAbstract.tex
-
-LaTeX Warning: Citation `at-free-independent-sets' on page iii undefined on inp
-ut line 9.
-
-
-LaTeX Warning: Citation `at-free-independent-sets' on page iii undefined on inp
-ut line 9.
-
-
-LaTeX Warning: Citation `at-free-3-colouring' on page iii undefined on input li
-ne 9.
-
-) [3
+ (./FrontMatter/BilingualAbstract.tex) [4
 
 
 
@@ -1367,207 +1384,25 @@ ne 9.
 ]
 \openout2 = `Content/Chapter1.aux'.
 
- (./Content/Chapter1.tex
+
+(./Content/Chapter1.tex
 Κεφάλαιο 1.
-
-LaTeX Warning: Citation `ref-20-independent-sets' on page 1 undefined on input 
-line 4.
-
-
-LaTeX Warning: Citation `at-free-independent-sets' on page 1 undefined on input
- line 5.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 5.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-
-LaTeX Warning: Citation `at-free-domination' on page 1 undefined on input line 
-5.
-
-
-LaTeX Warning: Citation `at-free-3-colouring' on page 1 undefined on input line
- 5.
-
 [1
 
 
 
 
-]
-
-LaTeX Warning: Citation `at-free-independent-sets' on page 2 undefined on input
- line 70.
-
-
-LaTeX Warning: Citation `at-free-domination' on page 2 undefined on input line 
-70.
-
-
-LaTeX Warning: Citation `at-free-3-colouring' on page 2 undefined on input line
- 70.
-
-[2]
-
-LaTeX Warning: Citation `tolerance-graphs-recognition' on page 3 undefined on i
-nput line 81.
-
-
-LaTeX Warning: Citation `arnborg-combinatorial-algorithms' on page 3 undefined 
-on input line 83.
-
-
-LaTeX Warning: Citation `johnson-np-completeness-column' on page 3 undefined on
- input line 83.
-
-
-LaTeX Warning: Citation `chang-domination-interval-circular-arc' on page 3 unde
-fined on input line 84.
-
-
-LaTeX Warning: Citation `chang-labelling-sunfree-chordal' on page 3 undefined o
-n input line 85.
-
-
-LaTeX Warning: Citation `farber-strongly-chordal-duality' on page 3 undefined o
-n input line 85.
-
-
-LaTeX Warning: Citation `corneil-perl-clustering-domination' on page 3 undefine
-d on input line 85.
-
-
-LaTeX Warning: Citation `corneil-stewart-dominating-perfect-graphs' on page 3 u
-ndefined on input line 85.
-
-
-LaTeX Warning: Citation `farber-keil-domination-permutation' on page 3 undefine
-d on input line 85.
-
-
-LaTeX Warning: Citation `rhee-liang-dhall-lakshmivarahan-permutation-graph-algo
-rithm' on page 3 undefined on input line 85.
-
-
-LaTeX Warning: Citation `rhee-liang-dhall-lakshmivarahan-permutation-graph-algo
-rithm' on page 3 undefined on input line 85.
-
-
-LaTeX Warning: Citation `elmallah-stewart-polygon-graphs' on page 3 undefined o
-n input line 86.
-
-
-LaTeX Warning: Citation `breu-kirkpatrick-cocomparability-graphs' on page 3 und
-efined on input line 86.
-
-
-LaTeX Warning: Citation `kratsch-stewart-cocomparability-domination' on page 3 
-undefined on input line 86.
-
-
-LaTeX Warning: Citation `chang-domination-interval-circular-arc-1998' on page 3
- undefined on input line 86.
-
-
-LaTeX Warning: Citation `brandstadt-chepoi-dragan-hypertree-1998' on page 3 und
-efined on input line 86.
-
-
-LaTeX Warning: Citation `breu-kirkpatrick-cocomparability-graphs' on page 3 und
-efined on input line 86.
-
-
-LaTeX Warning: Citation `garey-johnson-np-completeness' on page 3 undefined on 
-input line 89.
-
-
-LaTeX Warning: Citation `garey-johnson-stockmeyer-simplified-np' on page 3 unde
-fined on input line 89.
-
-
-LaTeX Warning: Citation `holyer-np-completeness-edge-coloring' on page 3 undefi
-ned on input line 89.
-
-
-LaTeX Warning: Citation `dailey-uniqueness-colorability-np-complete' on page 3 
-undefined on input line 89.
-
-
-LaTeX Warning: Citation `garey-johnson-stockmeyer-simplified-np' on page 3 unde
-fined on input line 89.
-
-
-LaTeX Warning: Citation `golumbic-algorithmic-graph-theory-perfect-graphs' on p
-age 3 undefined on input line 90.
-
-
-LaTeX Warning: Citation `golumbic-algorithmic-graph-theory-perfect-graphs' on p
-age 3 undefined on input line 90.
-
-
-LaTeX Warning: Citation `golumbic-algorithmic-graph-theory-perfect-graphs' on p
-age 3 undefined on input line 90.
-
-
-LaTeX Warning: Citation `grotschel-lovasz-schrijver-ellipsoid-method' on page 3
- undefined on input line 91.
-
-[3]
-
-LaTeX Warning: Reference `ch:Algorithms' on page 4 undefined on input line 100.
-
-
-
-LaTeX Warning: Reference `ch:Implementation' on page 4 undefined on input line 
-100.
-
-
-LaTeX Warning: Reference `ch:Conclusion' on page 4 undefined on input line 100.
-
-
-) [4]
+] [2] [3]) [4]
 \openout2 = `Content/Chapter2.aux'.
 
  (./Content/Chapter2.tex
 Κεφάλαιο 2.
-
-LaTeX Warning: Citation `at-free-independent-sets' on page 5 undefined on input
- line 7.
-
-
-LaTeX Warning: Citation `at-free-domination' on page 5 undefined on input line 
-7.
-
-
-LaTeX Warning: Citation `at-free-3-colouring' on page 5 undefined on input line
- 7.
-
 [5
 
 
 
 
 ]
-
-LaTeX Warning: Reference `lemma6_1' on page 6 undefined on input line 31.
-
-
-LaTeX Warning: Reference `lemma6_2' on page 6 undefined on input line 31.
-
-
-LaTeX Warning: Reference `lemma6_3' on page 6 undefined on input line 31.
-
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 52.
 
@@ -1576,66 +1411,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
  []
 
 [6] [7]
-
-LaTeX Warning: Reference `lemma6_3' on page 8 undefined on input line 85.
-
-
-LaTeX Warning: Reference `lemma6_2' on page 8 undefined on input line 85.
-
-
-LaTeX Warning: Reference `lemma6_1' on page 8 undefined on input line 85.
-
-
 Overfull \hbox (2.6632pt too wide) in paragraph at lines 85--86
 [][]\TU/GFSDidot(0)/m/n/12 Ο [][]αλγόριθμος [][]έτσι [][]όπως [][]παρουσιάζεται
  [][]από [][]τους []Broersma, H., Kloks, T., Kratsch,
  []
 
-
-LaTeX Warning: Reference `fig:at-free-graph-example' on page 8 undefined on inp
-ut line 87.
-
 File: pictures/at-free-graph.png Graphic file (type bmp)
 <pictures/at-free-graph.png>
-
-LaTeX Warning: Reference `table:first-step-intependent-set' on page 8 undefined
- on input line 96.
-
-[8]
-
-LaTeX Warning: Reference `table:second-step-intependent-set' on page 9 undefine
-d on input line 126.
-
-
-LaTeX Warning: Reference `table:sorted-components' on page 9 undefined on input
- line 151.
-
-
-LaTeX Warning: Reference `table:sorted-intervals' on page 9 undefined on input 
-line 151.
-
-[9]
-
-LaTeX Warning: Reference `lemma6_1' on page 10 undefined on input line 201.
-
-
-LaTeX Warning: Reference `lemma6_2' on page 10 undefined on input line 201.
-
-
-LaTeX Warning: Reference `table:computed-alpha-componentes' on page 10 undefine
-d on input line 201.
-
-
-LaTeX Warning: Reference `table:computed-alpha-intervals' on page 10 undefined 
-on input line 201.
-
-[10] [11]
-
-LaTeX Warning: Reference `lemma6_1' on page 12 undefined on input line 251.
-
+[8] [9] [10] [11]
 File: pictures/at-free-graph.intependent-set.png Graphic file (type bmp)
 <pictures/at-free-graph.intependent-set.png>
-[12]
+ [12]
 Overfull \hbox (4.02504pt too wide) in paragraph at lines 278--280
 []\TU/GFSDidot(0)/m/it/12 Έστω $\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = \OML/cmm
 /m/it/12 x; H[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 N\OT1/cmr/m/n/12 (\OML/cmm/m
@@ -1649,111 +1435,56 @@ LaTeX Font Warning: Command \LARGE invalid in math mode on input line 284.
 
 LaTeX Font Warning: Command \LARGE invalid in math mode on input line 297.
 
-[13]
-
-LaTeX Warning: Reference `domination-set-dsp-theorem' on page 14 undefined on i
-nput line 301.
-
-
-LaTeX Warning: Reference `domination-set-main-definiton' on page 14 undefined o
-n input line 301.
-
-[14]
+[13] [14]
 Overfull \vbox (57.07265pt too high) has occurred while \output is active []
 
 
 [15]
-
-LaTeX Warning: Reference `domination-set-main-definiton' on page 16 undefined o
-n input line 357.
-
-
-LaTeX Warning: Reference `domi-set-theomrem-5' on page 16 undefined on input li
-ne 357.
-
-
-LaTeX Warning: Reference `fig:at-free-graph-example-domi' on page 16 undefined 
-on input line 366.
+Overfull \hbox (7.88213pt too wide) in paragraph at lines 357--360
+[][]\TU/GFSDidot(0)/m/n/12 Κατ[]’ []αναλογία[], []τα [][]θεωρήματα [][]2.2[] []
+και [][]2.4[] []υποδηλώνουν [][]ότι [][]ο [][]αλγόριθμος $\OML/cmm/m/it/12 mcds
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 G\OT1/cmr/m/n/12 )$
+ []
 
 File: pictures/at-free-graph.png Graphic file (type bmp)
 <pictures/at-free-graph.png>
-[16]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.8 on input line 465.
-
-[17] [18]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.9 on input line 559.
-
-[19] [20]
-
-LaTeX Warning: Reference `alg:domi-set' on page 21 undefined on input line 562.
-
-
+[16] [17] [18] [19] [20]
 File: pictures/at-free-graph-domi-set.png Graphic file (type bmp)
 <pictures/at-free-graph-domi-set.png>
-
-LaTeX Warning: Reference `fig:diamond-k4' on page 21 undefined on input line 57
-7.
-
-[21]
+ [21]
 File: pictures/diamond-k4.png Graphic file (type bmp)
 <pictures/diamond-k4.png>
  [22]
-
-LaTeX Warning: Reference `fig:triangular-strip' on page 23 undefined on input l
-ine 610.
-
 File: pictures/triangular-strip.png Graphic file (type bmp)
 <pictures/triangular-strip.png>
-[23]
+ [23]
 Underfull \hbox (badness 10000) in paragraph at lines 676--677
 
  []
 
-[24] [25]
-
-LaTeX Warning: Reference `lemma:6.3' on page 26 undefined on input line 704.
-
-
-LaTeX Warning: Reference `lemma:6.1' on page 26 undefined on input line 704.
-
-
-LaTeX Warning: Reference `lemma:6.3' on page 26 undefined on input line 704.
-
-
-LaTeX Warning: Reference `lemma:6.2' on page 26 undefined on input line 704.
-
-
-LaTeX Warning: Citation `tarjan-depth-first-search' on page 26 undefined on inp
-ut line 706.
-
-Missing character: There is no σ ("3C3) in font cmmi12!
-Missing character: There is no τ ("3C4) in font cmmi12!
-Missing character: There is no ο ("3BF) in font cmmi12!
-
-LaTeX Warning: Reference `lemma:6.3' on page 26 undefined on input line 706.
-
-
-LaTeX Warning: Citation `tarjan-depth-first-search' on page 26 undefined on inp
-ut line 708.
-
-[26]) [27]
+[24] [25] [26]
+File: pictures/ex-coloring-1.png Graphic file (type bmp)
+<pictures/ex-coloring-1.png>
+File: pictures/ex-coloring-2.png Graphic file (type bmp)
+<pictures/ex-coloring-2.png>
+ [27]
+File: pictures/ex-coloring-3.png Graphic file (type bmp)
+<pictures/ex-coloring-3.png>
+File: pictures/ex-coloring-4.png Graphic file (type bmp)
+<pictures/ex-coloring-4.png>
+File: pictures/ex-coloring-before-expansion.png Graphic file (type bmp)
+<pictures/ex-coloring-before-expansion.png>
+ [28]
+File: pictures/ex-coloring-after-expansion.png Graphic file (type bmp)
+<pictures/ex-coloring-after-expansion.png>
+) [29]
 \openout2 = `Content/Chapter3.aux'.
 
  (./Content/Chapter3.tex
 Κεφάλαιο 3.
-
-LaTeX Warning: Reference `ch:Algorithms' on page 28 undefined on input line 6.
-
-
-LaTeX Warning: Citation `pyvis-docs' on page 28 undefined on input line 7.
-
 LaTeX Font Info:    Font shape `TU/UbuntuMono(0)/m/n' will be
 (Font)              scaled to size 11.39996pt on input line 13.
-[28
+[30
 
 
 
@@ -1771,62 +1502,21 @@ LaTeX Font Info:    Font shape `TU/UbuntuMono(0)/b/n' will be
 (Font)              scaled to size 9.49997pt on input line 1.
 LaTeX Font Info:    Font shape `TU/UbuntuMono(0)/m/it' will be
 (Font)              scaled to size 9.49997pt on input line 15.
- [29] [30]) [31]
-
-LaTeX Warning: Reference `lst:graph-compiler' on page 32 undefined on input lin
-e 88.
-
-[32]
-
-LaTeX Warning: Reference `sec:Independent_Set_Alg' on page 33 undefined on inpu
-t line 99.
-
-
-LaTeX Warning: Reference `lemma6_2' on page 33 undefined on input line 102.
-
-
-LaTeX Warning: Reference `lemma6_3' on page 33 undefined on input line 102.
-
-
-LaTeX Warning: Reference `sec:Domination_Set_Alg' on page 33 undefined on input
- line 105.
-
-[33]
+ [31] [32]) [33] [34] [35]
 Missing character: There is no Η ("397) in font cmmi12!
-(./Content/CodeDirectory/polynomial_time_algorithm_independent_set.py [34]
+(./Content/CodeDirectory/polynomial_time_algorithm_independent_set.py [36]
 Missing character: There is no ∈ (U+2208) in font [Font/UbuntuMono-R]/OT:script
 =latn;language=dflt;!
-[35] [36] [37] [38] [39])
-
-LaTeX Warning: Reference `lemma6_3' on page 40 undefined on input line 151.
-
-
-LaTeX Warning: Reference `lemma6_2' on page 40 undefined on input line 152.
-
-
-LaTeX Warning: Reference `lemma6_1' on page 40 undefined on input line 153.
-
-
-LaTeX Warning: Reference `lemma6_2' on page 40 undefined on input line 154.
-
-
-LaTeX Warning: Reference `lemma6_3' on page 40 undefined on input line 154.
-
-[40]
+[37] [38] [39] [40] [41]) [42]
 Overfull \hbox (10.03668pt too wide) in paragraph at lines 155--156
 [][]\TU/GFSDidot(0)/m/n/12 υπολογίσει [][]τα $\OML/cmm/m/it/12 Components$ []\T
 U/UbuntuMono(0)/m/n/12 D_iy\TU/GFSDidot(0)/m/n/12 , []δηλαδή [][]εκείνες [][]πο
 υ [][]περιέχονται [][]στο []\TU/UbuntuMono(0)/m/n/12 Cx_vertices
  []
 
-(./Content/CodeDirectory/graph_independent_set.py [41] [42] [43]) [44]
+(./Content/CodeDirectory/graph_independent_set.py [43] [44] [45]) [46]
 (./Content/CodeDirectory/component.py) (./Content/CodeDirectory/interval.py)
-[45]
-
-LaTeX Warning: Reference `sec:Independent_Set_Alg' on page 46 undefined on inpu
-t line 225.
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[47] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
@@ -1897,7 +1587,7 @@ If that doesn't work, type  X <return>  to quit.
 (./Content/CodeDirectory/input-graph.json)
 File: pictures/at-free-graph-pyvis.png Graphic file (type bmp)
 <pictures/at-free-graph-pyvis.png>
- [46]
+ [48]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -1966,35 +1656,22 @@ l.254 ]{Content/CodeDirectory/ind-output.txt}
 The language is not loadable. Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-(./Content/CodeDirectory/ind-output.txt [47] [48] [49] [50] [51])
+(./Content/CodeDirectory/ind-output.txt [49] [50] [51] [52] [53])
 File: pictures/at-free-graph-ind-output-pyvis.png Graphic file (type bmp)
 <pictures/at-free-graph-ind-output-pyvis.png>
-
-
-LaTeX Warning: Citation `corneil-olariu-stewart-asteroidal-triple-free-graphs' 
-on page 52 undefined on input line 268.
-
-[52] (./Content/CodeDirectory/polynomial_time_algorithm_domination_set.py
-[53]
+ [54]
+(./Content/CodeDirectory/polynomial_time_algorithm_domination_set.py [55]
 Missing character: There is no ⊆ (U+2286) in font [Font/UbuntuMono-R]/OT:script
 =latn;language=dflt;!
 Missing character: There is no ∪ (U+222A) in font [Font/UbuntuMono-R]/OT:script
 =latn;language=dflt;!
 Missing character: There is no ⊆ (U+2286) in font [Font/UbuntuMono-R]/OT:script
 =latn;language=dflt;!
-[54])
-
-LaTeX Warning: Reference `alg:domi-set' on page 55 undefined on input line 292.
-
-
-[55] (./Content/CodeDirectory/graph_domination_set.py [56] [57])
-
-LaTeX Warning: Reference `sec:Domination_Set_Alg' on page 58 undefined on input
- line 327.
-
+[56]) [57] (./Content/CodeDirectory/graph_domination_set.py [58] [59])
 File: pictures/at-free-graph-pyvis.png Graphic file (type bmp)
 <pictures/at-free-graph-pyvis.png>
-[58] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+ [60]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
@@ -2062,7 +1739,7 @@ l.343 ]{Content/CodeDirectory/domi-output.txt}
 The language is not loadable. Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-(./Content/CodeDirectory/domi-output.txt [59] [60] [61] [62] [63] [64]
+(./Content/CodeDirectory/domi-output.txt [61] [62] [63] [64] [65] [66]
 ! Dimension too large.
 \lsthk@InitVarsEOL ->\ifdim \lst@currlwidth 
                                             >\lst@maxwidth \global \lst@maxw...
@@ -2079,53 +1756,136 @@ l.237 ...'7', '0'}, {'2', '7', '0', '5', '1'}, 5)]
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
 
-[65] [66])
+[67] [68])
 File: pictures/at-free-graph-domi-output-pyvis.png Graphic file (type bmp)
 <pictures/at-free-graph-domi-output-pyvis.png>
+ (./Content/CodeDirectory/polynomial_time_algorithm_3_colouring.py
+[69] [70] [71]) (./Content/CodeDirectory/graph_3_colouring.py [72] [73]
+[74] [75]) [76] (./Content/CodeDirectory/block.py [77] [78] [79])
+(./Content/CodeDirectory/colouring.py [80] [81] [82] [83] [84]) [85]
+(./Content/CodeDirectory/tree.py [86] [87])
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+
+! Package Listings Error: Couldn't load requested language.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.545 ...CodeDirectory/input-graph-colouring.json}
+                                                  
+The following languages weren't loadable:
+    ,json$
+This may cause errors in the sequel.
 
 
-LaTeX Warning: Citation `tarjan-depth-first-search' on page 67 undefined on inp
-ut line 354.
+! Package Listings Error: language json undefined.
 
-(./Content/CodeDirectory/polynomial_time_algorithm_3_colouring.py [67] [68]
-[69])) [70]
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.545 ...CodeDirectory/input-graph-colouring.json}
+                                                  
+The language is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+
+! Package Listings Error: Couldn't load requested language.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.545 ...CodeDirectory/input-graph-colouring.json}
+                                                  
+The following languages weren't loadable:
+    ,json$
+This may cause errors in the sequel.
+
+
+! Package Listings Error: language json undefined.
+
+See the Listings package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.545 ...CodeDirectory/input-graph-colouring.json}
+                                                  
+The language is not loadable. Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(./Content/CodeDirectory/input-graph-colouring.json [88])
+File: pictures/coloring-1.png Graphic file (type bmp)
+<pictures/coloring-1.png>
+File: pictures/coloring-2.png Graphic file (type bmp)
+<pictures/coloring-2.png>
+ [89]
+File: pictures/coloring-3.png Graphic file (type bmp)
+<pictures/coloring-3.png>
+File: pictures/coloring-4.png Graphic file (type bmp)
+<pictures/coloring-4.png>
+ [90]
+File: pictures/coloring-block-cutpoint.png Graphic file (type bmp)
+<pictures/coloring-block-cutpoint.png>
+File: pictures/coloring-before-expansion.png Graphic file (type bmp)
+<pictures/coloring-before-expansion.png>
+ [91]
+File: pictures/coloring-final.png Graphic file (type bmp)
+<pictures/coloring-final.png>
+)
+[92]
 \openout2 = `Content/Chapter4.aux'.
 
- (./Content/Chapter4.tex)
-No file main.bbl.
+ (./Content/Chapter4.tex
+Κεφάλαιο 4.
+) [93
+
+
+
+
+] (./main.bbl [94
+
+
+
+
+] [95])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the main.maf file.
 \openout4 = `main.maf'.
 
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(./main.aux (./FrontMatter/Acknowledgements.aux) (./FrontMatter/Abstract.aux)
+ [96] (./main.aux
+(./FrontMatter/Acknowledgements.aux) (./FrontMatter/Abstract.aux)
 (./FrontMatter/BilingualAbstract.aux) (./Content/Chapter1.aux)
 (./Content/Chapter2.aux) (./Content/Chapter3.aux) (./Content/Chapter4.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  322D80A572F78F14A7DACD8146B4B495;6400.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 2DF2A84DCF207A68066FAE271BC596C9;7709.
  ) 
 Here is how much of TeX's memory you used:
- 33138 strings out of 476191
- 658711 string characters out of 5812072
- 1845770 words of memory out of 5000000
- 52980 multiletter control sequences out of 15000+600000
+ 33442 strings out of 476191
+ 667309 string characters out of 5812072
+ 1858778 words of memory out of 5000000
+ 53217 multiletter control sequences out of 15000+600000
  475162 words of font info for 94 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  88i,17n,99p,3926b,2096s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (76 pages).
+Output written on main.pdf (103 pages).
