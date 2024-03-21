@@ -23,8 +23,8 @@ class PolynomialTimeAlgorithm:
                 self.perform_contraction(vertices_to_contract)
                 return self.three_colouring()
 
-            line_9_condition,minimal_stable_separator = self.line_9_check()
-            if line_9_condition:
+            line_13_condition,minimal_stable_separator = self.line_13_check()
+            if line_13_condition:
                 self.perform_contraction(minimal_stable_separator)
                 return self.three_colouring()
 
@@ -49,7 +49,7 @@ class PolynomialTimeAlgorithm:
             return True , result
 
 
-    def line_9_check(self):
+    def line_13_check(self):
         """
         this should run in O(n*m) time
         if G contains a minimal stable separator S with |S| ≥ 2 then
@@ -59,6 +59,9 @@ class PolynomialTimeAlgorithm:
         biconnectivity_algorithm = TarjansBiconnectivity(self.graph)
         blocks, self.graph.cutpoints = biconnectivity_algorithm.find_biconnected_components()
 
+        for block in blocks:
+            print("block:", block)
+        
         print("cutpoints:",self.graph.cutpoints)
 
         # delete old blocks from graph and add the new blocks

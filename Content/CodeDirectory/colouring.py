@@ -163,8 +163,8 @@ class ThreeColouring:
         none_coloured_vertices = [vertex for vertex in self.graph.vertices if self.graph.vertices_color[vertex] is None]
         print("none coloured vertices:",none_coloured_vertices)
         for vertex in none_coloured_vertices:
-            available_colors = {'red', 'green', 'blue'}
             for neighbour in self.graph.adjacency_list[vertex]:
+                available_colors = {'red', 'green', 'blue'}
                 if self.graph.vertices_color[neighbour] in available_colors:
                     available_colors.remove(self.graph.vertices_color[neighbour])
             self.graph.vertices_color[vertex] = available_colors.pop()
