@@ -43,7 +43,7 @@ $n$ και τον αριθμό των ακμών με $m$.
 
 \begin{lemma}
 	\label{lemma6_3}
-	Έστω ότι $G = (V,E)$ είναι ένα AT-free γράφημα. Έστω $I = I(x,y)$ είναι ένα $Interval$ του $G$. Αν $I = \emptyset$ τότε $\alpha(I) = 0$. Αλλιώς $$\alpha(I)=1+\max_{s\in I}\left(\alpha(I(x,s))+\alpha(I(s,y))+\sum_{i}\alpha(C_i^s)\right)$$
+	Έστω ότι $G = (V,E)$ είναι ένα AT-free γράφημα. Έστω $I = I(x,y)$ είναι ένα $Interval$ του $G$. Αν $I = \emptyset$ τότε $\alpha(I) = 0$. Αλλιώς $$\alpha(I)=1+\max_{s\in I}\left(\alpha(I(x,s))+\alpha(I(s,y))+\sum_{i}\alpha(C_i^s)\right)$$ όπου τα $C_i^s$ είναι $Components$ του $G - N[s]$ που εμπεριέχονται στο $I(x,y)$.
 \end{lemma}
 
 Σε αυτό το σημείο μπορούμε να δώσουμε τον αλγόριθμο για τον υπολογισμό του αριθμού ανεξαρτησίας $\alpha(G)$ για AT-free γραφήματα, ο οποίος είναι βασισμένος στον δυναμικό προγραμματισμό. 
